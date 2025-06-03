@@ -14,6 +14,8 @@ class _AuthScreenState extends State<AuthScreen> {
   bool _isLoading = false;
   String? _error;
 
+  User? get _user => Supabase.instance.client.auth.currentUser;
+
   Future<void> _signInOrSignUp() async {
     setState(() {
       _isLoading = true;
@@ -38,6 +40,7 @@ class _AuthScreenState extends State<AuthScreen> {
           });
         }
       }
+      setState(() {}); // Refresh UI on sign in
     } on AuthException catch (e) {
       setState(() {
         _error = e.message;
@@ -53,8 +56,31 @@ class _AuthScreenState extends State<AuthScreen> {
     }
   }
 
+  Future<void> _signOut() async {
+    await Supabase.instance.client.auth.signOut();
+    setState(() {}); // Refresh UI
+  }
+
   @override
   Widget build(BuildContext context) {
+    if (_user != null) {
+      return Scaffold(
+        appBar: AppBar(title: const Text('Account')),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Signed in as: ${_user!.email}', style: const TextStyle(fontSize: 18)),
+              const SizedBox(height: 24),
+              ElevatedButton(
+                onPressed: _signOut,
+                child: const Text('Sign Out'),
+              ),
+            ],
+          ),
+        ),
+      );
+    }
     return Scaffold(
       appBar: AppBar(title: const Text('Sign In / Sign Up')),
       body: Padding(
