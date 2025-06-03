@@ -13,10 +13,11 @@ class _AuthScreenState extends State<AuthScreen> {
   final _passwordController = TextEditingController();
   bool _isLoading = false;
   String? _error;
+  bool _isSignUp = false;
 
   User? get _user => Supabase.instance.client.auth.currentUser;
 
-  Future<void> _signInOrSignUp() async {
+  Future<void> _signIn() async {
     setState(() {
       _isLoading = true;
       _error = null;
@@ -29,18 +30,51 @@ class _AuthScreenState extends State<AuthScreen> {
         password: password,
       );
       if (response.user == null) {
-        // If sign in fails, try sign up
-        final signUpResponse = await Supabase.instance.client.auth.signUp(
-          email: email,
-          password: password,
-        );
-        if (signUpResponse.user == null) {
-          setState(() {
-            _error = 'Authentication failed.';
-          });
-        }
+        setState(() {
+          _error = 'Invalid login credentials.';
+        });
+      } else {
+        setState(() {}); // Refresh UI on sign in
       }
-      setState(() {}); // Refresh UI on sign in
+    } on AuthException catch (e) {
+      setState(() {
+        _error = e.message;
+      });
+    } catch (e) {
+      setState(() {
+        _error = 'Unexpected error: $e';
+      });
+    } finally {
+      setState(() {
+        _isLoading = false;
+      });
+    }
+  }
+
+  Future<void> _signUp() async {
+    setState(() {
+      _isLoading = true;
+      _error = null;
+    });
+    final email = _emailController.text.trim();
+    final password = _passwordController.text.trim();
+    try {
+      final response = await Supabase.instance.client.auth.signUp(
+        email: email,
+        password: password,
+      );
+      if (response.user == null) {
+        setState(() {
+          _error = 'Sign up failed.';
+        });
+      } else {
+        setState(() {
+          _isSignUp = false;
+        });
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Sign up successful! Please sign in.')),
+        );
+      }
     } on AuthException catch (e) {
       setState(() {
         _error = e.message;
@@ -82,7 +116,7 @@ class _AuthScreenState extends State<AuthScreen> {
       );
     }
     return Scaffold(
-      appBar: AppBar(title: const Text('Sign In / Sign Up')),
+      appBar: AppBar(title: Text(_isSignUp ? 'Sign Up' : 'Sign In')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -105,11 +139,29 @@ class _AuthScreenState extends State<AuthScreen> {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: _isLoading ? null : _signInOrSignUp,
+                onPressed: _isLoading
+                    ? null
+                    : _isSignUp
+                        ? _signUp
+                        : _signIn,
                 child: _isLoading
                     ? const CircularProgressIndicator(color: Colors.white)
-                    : const Text('Sign In / Sign Up'),
+                    : Text(_isSignUp ? 'Sign Up' : 'Sign In'),
               ),
+            ),
+            const SizedBox(height: 16),
+            TextButton(
+              onPressed: _isLoading
+                  ? null
+                  : () {
+                      setState(() {
+                        _isSignUp = !_isSignUp;
+                        _error = null;
+                      });
+                    },
+              child: Text(_isSignUp
+                  ? 'Already have an account? Sign In'
+                  : 'Don\'t have an account? Sign Up'),
             ),
           ],
         ),
