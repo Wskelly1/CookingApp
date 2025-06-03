@@ -3,12 +3,12 @@
 # Status: in-progress
 # Dependencies: None
 # Priority: high
-# Description: Initialize React Native project with necessary configurations for iOS and Android platforms
+# Description: Initialize Flutter project with necessary configurations for iOS and Android platforms
 # Details:
-Create a new React Native project using the latest CLI version with TypeScript support. Configure project structure following best practices with directories for components, screens, assets, navigation, and utils. Set up ESLint, Prettier, and TypeScript for code quality. Initialize Git repository and create initial commit. Configure environment variables for development, staging, and production environments. Set up shadcn component library integration for consistent UI components. Install and configure navigation and async storage dependencies.
+Create a new Flutter project using the latest Flutter SDK with Dart support. Configure project structure following best practices with directories for components, screens, assets, navigation, and utils. Set up Dart analysis options and code formatting for code quality. Initialize Git repository and create initial commit. Configure environment variables for development, staging, and production environments. Set up Material Components or Flutter widgets for consistent UI components. Install and configure navigation and shared preferences dependencies.
 
 # Test Strategy:
-Verify project builds successfully on Android simulator. Note that iOS build requires Xcode installation and proper configuration. Ensure all development scripts work as expected. Validate TypeScript configuration with sample components.
+Verify project builds successfully on Android simulator. Note that iOS build requires Xcode installation and proper configuration. Ensure all development scripts work as expected. Validate Dart configuration with sample widgets.
 
 # Subtasks:
 ## 1.1. Create React Native project with TypeScript [done]
@@ -53,6 +53,42 @@ Verify project builds successfully on Android simulator. Note that iOS build req
 ### Details:
 
 
+## 1.11. Create new Flutter project [to-do]
+### Dependencies: None
+### Description: Create a new Flutter project using 'flutter create' command to replace the React Native project
+### Details:
+
+
+## 1.12. Migrate project structure to Flutter conventions [to-do]
+### Dependencies: None
+### Description: Adapt the existing structure to Flutter conventions with lib/widgets, lib/screens, lib/models, etc.
+### Details:
+
+
+## 1.13. Configure Dart analysis options [to-do]
+### Dependencies: None
+### Description: Set up analysis_options.yaml for Dart linting and code style
+### Details:
+
+
+## 1.14. Set up Flutter environment configuration [to-do]
+### Dependencies: None
+### Description: Configure environment variables using Flutter-appropriate methods like .env files with flutter_dotenv
+### Details:
+
+
+## 1.15. Set up Material Components or Flutter widget library [to-do]
+### Dependencies: None
+### Description: Configure Material Design components or another widget library to replace shadcn
+### Details:
+
+
+## 1.16. Install Flutter navigation and shared preferences [to-do]
+### Dependencies: None
+### Description: Add dependencies for navigation (e.g., go_router) and shared preferences for local storage
+### Details:
+
+
 ## 1.8. Test Android build [to-do]
 ### Dependencies: None
 ### Description: Verify project builds successfully on Android simulator/emulator
@@ -65,9 +101,9 @@ Verify project builds successfully on Android simulator. Note that iOS build req
 ### Details:
 
 
-## 1.1. Validate TypeScript with sample component [to-do]
+## 1.17. Validate Dart with sample widget [to-do]
 ### Dependencies: None
-### Description: Create a sample component to validate TypeScript configuration is working correctly
+### Description: Create a sample widget to validate Dart configuration is working correctly
 ### Details:
 
 

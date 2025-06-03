@@ -5,7 +5,57 @@
 # Priority: medium
 # Description: Implement recipe categorization by difficulty level (easy, medium, hard)
 # Details:
-Create algorithm for classifying recipe difficulty based on ingredients, steps, techniques, and time. Implement visual indicators for difficulty levels. Create filtering system based on difficulty. Connect difficulty level to user experience level for recommendations. Implement difficulty-based sorting in search results. Add explanation for difficulty classification when requested.
+Create algorithm for classifying recipe difficulty based on ingredients, steps, techniques, and time. Implement visual indicators for difficulty levels using Flutter widgets. Create filtering system based on difficulty with Flutter's state management. Connect difficulty level to user experience level for recommendations. Implement difficulty-based sorting in search results. Add explanation for difficulty classification when requested. Use Dart for all algorithm implementations.
 
 # Test Strategy:
-Test difficulty classification with various recipe types. Verify difficulty filtering works correctly. Test recommendation system based on user experience and recipe difficulty. Ensure difficulty indicators are clearly visible in recipe displays.
+Test difficulty classification with various recipe types using Flutter test framework. Verify difficulty filtering works correctly in the Flutter app. Test recommendation system based on user experience and recipe difficulty. Ensure difficulty indicators are clearly visible in Flutter UI components. Use widget testing for UI elements and unit testing for classification algorithms.
+
+# Subtasks:
+## 20.1. Implement difficulty classification algorithm in Dart [pending]
+### Dependencies: None
+### Description: 
+### Details:
+
+
+## 20.2. Create Flutter widgets for difficulty level indicators [pending]
+### Dependencies: None
+### Description: 
+### Details:
+
+
+## 20.3. Implement difficulty filtering using Flutter state management [pending]
+### Dependencies: None
+### Description: 
+### Details:
+
+
+## 20.4. Connect user experience to recipe difficulty for recommendations [pending]
+### Dependencies: None
+### Description: 
+### Details:
+
+
+## 20.5. Add difficulty-based sorting to search results [pending]
+### Dependencies: None
+### Description: 
+### Details:
+
+
+## 20.6. Implement UI for difficulty explanation tooltips [pending]
+### Dependencies: None
+### Description: 
+### Details:
+
+
+## 20.7. Write unit tests for difficulty classification algorithm [pending]
+### Dependencies: None
+### Description: 
+### Details:
+
+
+## 20.8. Write widget tests for difficulty UI components [pending]
+### Dependencies: None
+### Description: 
+### Details:
+
+

@@ -5,7 +5,39 @@
 # Priority: high
 # Description: Integrate OpenAI or similar LLM API for the 'Hey Chef' assistant functionality
 # Details:
-Research and select appropriate LLM API (OpenAI, etc.). Create API service for LLM communication. Implement prompt engineering for recipe sourcing based on ingredients and tools. Create response parsing for structured recipe data. Implement error handling and retry logic for API failures. Set up caching mechanism for common queries to reduce API calls. Create fallback responses for when the API is unavailable.
+Research and select appropriate LLM API (OpenAI, etc.). Create Dart service class for LLM communication. Implement prompt engineering for recipe sourcing based on ingredients and tools. Create response parsing for structured recipe data in Dart. Implement error handling and retry logic for API failures using Flutter best practices. Set up caching mechanism for common queries to reduce API calls (consider using shared_preferences or hive). Create fallback responses for when the API is unavailable.
 
 # Test Strategy:
-Test API integration with various ingredient and tool combinations. Verify response parsing correctly extracts recipe information. Test error handling with simulated API failures. Measure response times and optimize as needed.
+Test API integration with various ingredient and tool combinations using Flutter test framework. Verify response parsing correctly extracts recipe information. Test error handling with simulated API failures. Measure response times and optimize as needed. Use Flutter's integration testing capabilities to verify end-to-end functionality.
+
+# Subtasks:
+## 8.1. Research and select Flutter-compatible LLM API package [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Evaluate packages like dart_openai, langchain_dart, or other Flutter-compatible LLM API clients. Consider factors like documentation, community support, and compatibility with Flutter.
+
+## 8.2. Create API service class in Dart [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Implement a service class following Flutter best practices that handles communication with the selected LLM API. Use dependency injection for better testability.
+
+## 8.3. Implement caching with Flutter storage solutions [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Set up a caching mechanism using Flutter-appropriate storage solutions like shared_preferences, hive, or sqflite to reduce API calls for common queries.
+
+## 8.4. Create Dart models for structured recipe data [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Define Dart classes with proper typing to represent recipe data returned from the LLM. Implement fromJson/toJson methods for serialization.
+
+## 8.5. Write unit and integration tests [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Create comprehensive tests using Flutter's testing framework to verify API integration, response parsing, and error handling.
+

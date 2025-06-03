@@ -5,7 +5,51 @@
 # Priority: high
 # Description: Set up the app's navigation structure with bottom navigation bar and screen transitions
 # Details:
-Implement React Navigation library for app navigation. Create bottom tab navigator with Home, Search, Cookbook, and Profile tabs. Set up stack navigators for each main section. Implement navigation service for programmatic navigation. Configure screen transitions and animations. Implement deep linking support for future use. Create navigation guards for authenticated routes.
+Implement Flutter navigation system for app routing. Create a bottom navigation bar with Home, Search, Cookbook, and Profile tabs. Set up named routes for each main section. Implement a navigation service for programmatic navigation. Configure screen transitions and animations using Hero widgets and page transitions. Implement deep linking support for future use. Create navigation guards for authenticated routes using route observers.
 
 # Test Strategy:
-Test navigation flow between all screens. Verify bottom tab navigation works correctly. Ensure proper handling of back navigation. Test deep linking functionality.
+Test navigation flow between all screens. Verify bottom tab navigation works correctly. Ensure proper handling of back navigation. Test deep linking functionality. Write widget tests for navigation components. Use Flutter integration tests to verify navigation flows.
+
+# Subtasks:
+## 4.1. Set up basic navigation structure [pending]
+### Dependencies: None
+### Description: Implement the core navigation system using Flutter's navigation APIs
+### Details:
+
+
+## 4.2. Create bottom navigation bar [pending]
+### Dependencies: None
+### Description: Implement BottomNavigationBar widget with the required tabs and icons
+### Details:
+
+
+## 4.3. Configure named routes [pending]
+### Dependencies: None
+### Description: Set up named routes for all screens in the app using Flutter's route management
+### Details:
+
+
+## 4.4. Implement navigation service [pending]
+### Dependencies: None
+### Description: Create a navigation service class that allows for programmatic navigation from anywhere in the app
+### Details:
+
+
+## 4.5. Add screen transitions [pending]
+### Dependencies: None
+### Description: Configure custom page transitions using PageRouteBuilder or transition packages
+### Details:
+
+
+## 4.6. Implement deep linking [pending]
+### Dependencies: None
+### Description: Set up deep linking support using uni_links package and configure AndroidManifest.xml and Info.plist
+### Details:
+
+
+## 4.7. Create authentication route guards [pending]
+### Dependencies: None
+### Description: Implement route observers to protect authenticated routes
+### Details:
+
+

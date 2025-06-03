@@ -3,9 +3,77 @@
 # Status: pending
 # Dependencies: 1
 # Priority: high
-# Description: Implement a comprehensive design system with shadcn components for consistent UI across the app
+# Description: Implement a comprehensive design system with Flutter components for consistent UI across the app
 # Details:
-Create a global theme provider with color palette definitions for both light and dark modes. Set up typography system with font families, sizes, and weights. Implement spacing system with consistent values. Create reusable component library using shadcn components, including buttons, inputs, cards, modals, and navigation elements. Implement responsive design utilities for different screen sizes. Document all UI components and their usage patterns.
+Create a global theme provider with color palette definitions for both light and dark modes using Flutter's ThemeData. Set up typography system with font families, sizes, and weights using TextTheme. Implement spacing system with consistent values through a custom spacing class. Create reusable component library using Flutter widgets, including buttons, inputs, cards, modals, and navigation elements. Implement responsive design utilities for different screen sizes using LayoutBuilder and MediaQuery. Document all UI components and their usage patterns.
 
 # Test Strategy:
-Create a storybook or component showcase screen to verify all UI components. Test components across different device sizes. Ensure dark/light mode toggle works correctly for all components.
+Create a widget catalog or component showcase screen to verify all UI components. Test components across different device sizes using Flutter's DevicePreview package. Ensure dark/light mode toggle works correctly for all components using Flutter's theme system.
+
+# Subtasks:
+## 3.1. Set up ThemeData configuration [pending]
+### Dependencies: None
+### Description: Create theme configuration with ColorScheme for light and dark modes
+### Details:
+
+
+## 3.2. Implement Typography system [pending]
+### Dependencies: None
+### Description: Configure TextTheme with appropriate font families, sizes, and weights
+### Details:
+
+
+## 3.3. Create spacing constants [pending]
+### Dependencies: None
+### Description: Define a consistent spacing system with a dedicated class for padding and margin values
+### Details:
+
+
+## 3.4. Build button component variants [pending]
+### Dependencies: None
+### Description: Implement primary, secondary, outline, and text button styles using ElevatedButton, OutlinedButton, and TextButton
+### Details:
+
+
+## 3.5. Create input field components [pending]
+### Dependencies: None
+### Description: Build TextField variants with consistent styling and validation patterns
+### Details:
+
+
+## 3.6. Implement card and container components [pending]
+### Dependencies: None
+### Description: Create Card and Container widgets with consistent elevation, border radius, and padding
+### Details:
+
+
+## 3.7. Build dialog and modal components [pending]
+### Dependencies: None
+### Description: Implement reusable Dialog and BottomSheet components with consistent styling
+### Details:
+
+
+## 3.8. Create responsive layout utilities [pending]
+### Dependencies: None
+### Description: Build helper widgets using MediaQuery and LayoutBuilder for responsive designs
+### Details:
+
+
+## 3.9. Implement theme toggle functionality [pending]
+### Dependencies: None
+### Description: Create a theme service using Provider or Riverpod for managing theme state
+### Details:
+
+
+## 3.1. Build component showcase screen [pending]
+### Dependencies: None
+### Description: Create a dedicated screen displaying all UI components for testing and documentation
+### Details:
+
+
+## 3.11. Document component usage [pending]
+### Dependencies: None
+### Description: Create documentation for all UI components with usage examples and parameters
+### Details:
+
+

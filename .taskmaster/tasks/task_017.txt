@@ -5,7 +5,57 @@
 # Priority: medium
 # Description: Create the search screen for manually browsing or filtering recipes
 # Details:
-Design search screen with search bar and filter options. Implement text-based recipe search functionality. Create advanced filtering by ingredient, tool, dietary need, difficulty, and time. Implement search history tracking. Add popular searches or trending recipes section. Create UI for displaying search results in list and grid views. Implement infinite scrolling for large result sets.
+Design search screen with search bar and filter options using Flutter widgets. Implement text-based recipe search functionality with Dart. Create advanced filtering by ingredient, tool, dietary need, difficulty, and time using Flutter's filtering components. Implement search history tracking with shared preferences or local database. Add popular searches or trending recipes section. Create UI for displaying search results in list and grid views using ListView.builder and GridView.builder. Implement infinite scrolling for large result sets using ScrollController or packages like infinite_scroll_pagination.
 
 # Test Strategy:
-Test search with various queries and filter combinations. Verify search results match query and filter criteria. Test search history functionality. Ensure infinite scrolling works correctly with large result sets.
+Test search with various queries and filter combinations using Flutter widget tests and integration tests. Verify search results match query and filter criteria. Test search history functionality with unit tests. Ensure infinite scrolling works correctly with large result sets using Flutter Driver tests.
+
+# Subtasks:
+## 17.1. Create search screen UI with Flutter widgets [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Implement the search screen layout using Flutter widgets like TextField for search input, DropdownButton for filters, and TabBar for switching between list and grid views.
+
+## 17.2. Implement search functionality with Dart [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Create search logic in Dart to filter recipes based on text input, using state management solution (Provider, Bloc, or Riverpod).
+
+## 17.3. Build advanced filtering options [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Implement filtering by ingredient, tool, dietary need, difficulty, and time using Flutter's ExpansionPanel or custom filter widgets.
+
+## 17.4. Implement search history with local storage [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Store and retrieve search history using shared_preferences or sqflite package.
+
+## 17.5. Create trending recipes section [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Display popular searches or trending recipes in a horizontal ListView with recipe cards.
+
+## 17.6. Implement list and grid view toggle [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Create UI for displaying search results in both list (ListView.builder) and grid (GridView.builder) formats with a toggle button.
+
+## 17.7. Add infinite scrolling for search results [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Implement pagination for search results using ScrollController listeners or the infinite_scroll_pagination package.
+
+## 17.8. Write widget and integration tests [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Create Flutter widget tests and integration tests to verify search functionality, filtering, and UI components.
+

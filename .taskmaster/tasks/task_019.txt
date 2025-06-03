@@ -5,7 +5,51 @@
 # Priority: low
 # Description: Implement light and dark mode with user preference toggle
 # Details:
-Extend global theme provider to support theme switching. Create theme toggle in user settings. Implement system theme detection and automatic switching. Ensure all UI components adapt to theme changes. Add theme persistence in local storage. Create smooth transition animation between themes. Test all screens and components in both themes.
+Extend ThemeData provider to support theme switching in Flutter. Create theme toggle in user settings. Implement system theme detection and automatic switching using Flutter's WidgetsBinding. Ensure all UI widgets adapt to theme changes. Add theme persistence in shared_preferences. Create smooth transition animation between themes using AnimatedTheme. Test all screens and widgets in both themes.
 
 # Test Strategy:
-Test theme switching across all app screens. Verify all components correctly adapt to theme changes. Test system theme detection and automatic switching. Ensure theme preference is persisted between app launches.
+Test theme switching across all app screens. Verify all widgets correctly adapt to theme changes. Test system theme detection and automatic switching. Ensure theme preference is persisted between app launches. Write widget tests to verify theme-dependent UI elements render correctly.
+
+# Subtasks:
+## 19.1. Create theme data definitions [pending]
+### Dependencies: None
+### Description: Define light and dark ThemeData objects with appropriate color schemes, text styles, and widget themes
+### Details:
+
+
+## 19.2. Implement ThemeProvider using Provider or Riverpod [pending]
+### Dependencies: None
+### Description: Create a theme provider that manages theme state and provides it to the widget tree
+### Details:
+
+
+## 19.3. Add system theme detection [pending]
+### Dependencies: None
+### Description: Use MediaQuery.platformBrightnessOf(context) to detect system theme and apply it automatically
+### Details:
+
+
+## 19.4. Create theme toggle widget [pending]
+### Dependencies: None
+### Description: Implement a toggle switch in settings to change between light, dark, and system themes
+### Details:
+
+
+## 19.5. Add theme persistence [pending]
+### Dependencies: None
+### Description: Use shared_preferences package to save and restore theme preferences
+### Details:
+
+
+## 19.6. Implement theme transition animation [pending]
+### Dependencies: None
+### Description: Use AnimatedTheme or AnimatedBuilder to create smooth transitions between themes
+### Details:
+
+
+## 19.7. Test theme implementation [pending]
+### Dependencies: None
+### Description: Write widget tests to verify theme changes are correctly applied to all UI components
+### Details:
+
+

@@ -5,7 +5,69 @@
 # Priority: high
 # Description: Create the onboarding experience for new users to collect preferences and experience level
 # Details:
-Design multi-step onboarding flow with progress indicator. Create screens for: cooking experience selection (beginner, intermediate, advanced), dietary restrictions selection (gluten-free, vegan, vegetarian, etc.), food preferences input, purpose for downloading, and referral source. Implement data collection and storage in Supabase. Create skip functionality for optional steps. Implement onboarding completion tracking.
+Design multi-step onboarding flow with progress indicator using Flutter widgets. Create screens for: cooking experience selection (beginner, intermediate, advanced), dietary restrictions selection (gluten-free, vegan, vegetarian, etc.), food preferences input, purpose for downloading, and referral source. Implement data collection and storage in Supabase using the Supabase Flutter SDK. Create skip functionality for optional steps. Implement onboarding completion tracking with shared preferences or Supabase.
 
 # Test Strategy:
-Test complete onboarding flow with various user inputs. Verify all user preferences are correctly saved to the database. Test skipping optional steps. Ensure onboarding can be completed successfully.
+Test complete onboarding flow with various user inputs using Flutter widget tests and integration tests. Verify all user preferences are correctly saved to the database. Test skipping optional steps. Ensure onboarding can be completed successfully. Use Flutter's test framework to validate UI components and state management.
+
+# Subtasks:
+## 6.1. Set up onboarding screens structure [pending]
+### Dependencies: None
+### Description: Create the basic Flutter widget structure for the onboarding flow
+### Details:
+
+
+## 6.2. Implement progress indicator [pending]
+### Dependencies: None
+### Description: Create a custom progress indicator widget or use a Flutter package like step_progress_indicator to show user progress through onboarding
+### Details:
+
+
+## 6.3. Build experience level selection screen [pending]
+### Dependencies: None
+### Description: Implement UI for selecting cooking experience level using Flutter widgets like Radio or custom selection cards
+### Details:
+
+
+## 6.4. Build dietary restrictions screen [pending]
+### Dependencies: None
+### Description: Create multi-select UI for dietary restrictions using CheckboxListTile or custom widgets
+### Details:
+
+
+## 6.5. Implement food preferences input [pending]
+### Dependencies: None
+### Description: Create UI for inputting food preferences with appropriate Flutter form widgets
+### Details:
+
+
+## 6.6. Create purpose and referral screens [pending]
+### Dependencies: None
+### Description: Implement screens for collecting app purpose and referral source information
+### Details:
+
+
+## 6.7. Implement Supabase integration [pending]
+### Dependencies: None
+### Description: Set up Supabase Flutter SDK and implement data storage for user preferences
+### Details:
+
+
+## 6.8. Add skip functionality [pending]
+### Dependencies: None
+### Description: Implement skip buttons and logic for optional steps in the onboarding flow
+### Details:
+
+
+## 6.9. Track onboarding completion [pending]
+### Dependencies: None
+### Description: Implement logic to track and store onboarding completion status using shared_preferences or Supabase
+### Details:
+
+
+## 6.1. Write widget and integration tests [pending]
+### Dependencies: None
+### Description: Create comprehensive tests for the onboarding flow using Flutter's test framework
+### Details:
+
+

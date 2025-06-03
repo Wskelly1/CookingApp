@@ -5,7 +5,57 @@
 # Priority: low
 # Description: Implement system to track and display user cooking experience level
 # Details:
-Create experience tracking system with points for completed recipes. Implement level progression (beginner, intermediate, advanced) based on points. Create UI for displaying current level and progress. Implement milestone celebrations for level-ups. Add experience history tracking. Connect experience level to recipe recommendations and difficulty access. Store experience data in Supabase with local caching.
+Create experience tracking system with points for completed recipes. Implement level progression (beginner, intermediate, advanced) based on points. Create Flutter UI for displaying current level and progress. Implement milestone celebrations for level-ups. Add experience history tracking. Connect experience level to recipe recommendations and difficulty access. Store experience data in Supabase with local caching using Flutter's shared_preferences or hive packages.
 
 # Test Strategy:
-Test experience point accumulation with recipe completions. Verify level progression works correctly. Test UI display of experience level and progress. Ensure milestone celebrations trigger appropriately.
+Test experience point accumulation with recipe completions using Flutter integration tests. Verify level progression works correctly. Test UI display of experience level and progress with Flutter widget tests. Ensure milestone celebrations trigger appropriately. Use Flutter's test package for unit testing business logic.
+
+# Subtasks:
+## 21.1. Create Supabase data model for experience tracking [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Design and implement Supabase tables for storing user experience points, levels, and history. Use Dart models to represent these entities in the app.
+
+## 21.2. Implement experience point calculation logic [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Create Dart service class to calculate and award experience points for recipe completions based on difficulty and other factors.
+
+## 21.3. Develop level progression system [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Implement logic to determine user level (beginner, intermediate, advanced) based on accumulated points. Create thresholds for level advancement.
+
+## 21.4. Build Flutter UI components for experience display [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Create custom Flutter widgets for displaying current level, progress bar to next level, and experience history. Use Flutter's animation capabilities for engaging visual feedback.
+
+## 21.5. Implement milestone celebrations [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Create animated Flutter overlays or modals that trigger when users level up. Use Flutter's animation framework for confetti effects or other celebratory visuals.
+
+## 21.6. Integrate local caching with Supabase [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Use shared_preferences or hive package to cache experience data locally. Implement synchronization logic between local cache and Supabase backend.
+
+## 21.7. Connect experience level to recipe recommendations [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Modify recipe recommendation algorithm to factor in user experience level. Implement provider or bloc pattern for state management of this feature.
+
+## 21.8. Write Flutter tests for experience system [pending]
+### Dependencies: None
+### Description: 
+### Details:
+Create unit tests for experience calculation logic, widget tests for UI components, and integration tests for the full experience tracking flow using Flutter's test framework.
+

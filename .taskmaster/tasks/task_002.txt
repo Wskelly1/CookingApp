@@ -5,7 +5,57 @@
 # Priority: high
 # Description: Set up Supabase project and configure authentication and database services
 # Details:
-Create a new Supabase project. Configure authentication with email/password sign-up and sign-in. Set up database tables for user profiles, preferences, saved recipes, and progress tracking. Create necessary database schemas with appropriate relationships. Implement Row Level Security (RLS) policies for data protection. Generate API keys and configure environment variables for the React Native app.
+Create a new Supabase project. Configure authentication with email/password sign-up and sign-in. Set up database tables for user profiles, preferences, saved recipes, and progress tracking. Create necessary database schemas with appropriate relationships. Implement Row Level Security (RLS) policies for data protection. Generate API keys and configure environment variables for the Flutter app.
 
 # Test Strategy:
-Test authentication flow with sample user accounts. Verify database operations (CRUD) for all tables. Ensure RLS policies correctly restrict access to user data.
+Test authentication flow with sample user accounts. Verify database operations (CRUD) for all tables. Ensure RLS policies correctly restrict access to user data. Use Flutter testing tools to validate integration.
+
+# Subtasks:
+## 2.1. Set up Supabase project [pending]
+### Dependencies: None
+### Description: Create a new Supabase project and configure basic settings
+### Details:
+
+
+## 2.2. Add Supabase packages to Flutter project [pending]
+### Dependencies: None
+### Description: Add supabase_flutter and other necessary packages to pubspec.yaml and run flutter pub get
+### Details:
+
+
+## 2.3. Configure authentication [pending]
+### Dependencies: None
+### Description: Set up email/password authentication in Supabase and implement in Flutter app
+### Details:
+
+
+## 2.4. Create database schemas [pending]
+### Dependencies: None
+### Description: Design and implement database tables with proper relationships
+### Details:
+
+
+## 2.5. Implement RLS policies [pending]
+### Dependencies: None
+### Description: Set up Row Level Security to protect user data
+### Details:
+
+
+## 2.6. Configure environment variables [pending]
+### Dependencies: None
+### Description: Set up environment variables in Flutter for Supabase API keys and URLs
+### Details:
+
+
+## 2.7. Create Dart models [pending]
+### Dependencies: None
+### Description: Create Dart model classes that correspond to Supabase database tables
+### Details:
+
+
+## 2.8. Implement Supabase service class [pending]
+### Dependencies: None
+### Description: Create a service class to handle all Supabase interactions in the Flutter app
+### Details:
+
+

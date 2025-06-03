@@ -5,7 +5,45 @@
 # Priority: medium
 # Description: Create the pop-up chef avatar that appears during assistant interactions
 # Details:
-Design animated chef avatar with different states (idle, listening, speaking, thinking). Implement pop-up animation for avatar appearance and dismissal. Create speech bubble or text display for assistant responses. Implement avatar state management based on interaction context. Add subtle animations for improved user experience. Ensure avatar is non-intrusive but helpful during cooking process.
+Design animated chef avatar with different states (idle, listening, speaking, thinking) using Flutter animations. Implement pop-up animation for avatar appearance and dismissal with Flutter's animation controllers. Create speech bubble or text display for assistant responses using Flutter widgets. Implement avatar state management based on interaction context using Flutter state management (Provider, Bloc, or Riverpod). Add subtle animations for improved user experience with Flutter's animation framework. Ensure avatar is non-intrusive but helpful during cooking process.
 
 # Test Strategy:
-Test avatar animations and state transitions. Verify avatar correctly responds to different interaction states. Test avatar on different screen sizes to ensure proper scaling and positioning.
+Test avatar animations and state transitions using Flutter widget tests. Verify avatar correctly responds to different interaction states with integration tests. Test avatar on different screen sizes to ensure proper scaling and positioning using Flutter's device preview or test on various emulators.
+
+# Subtasks:
+## 10.1. Create Chef Avatar Widget [pending]
+### Dependencies: None
+### Description: Implement the base Flutter widget for the chef avatar
+### Details:
+
+
+## 10.2. Implement Animation States [pending]
+### Dependencies: None
+### Description: Create different animation states using Flutter's animation controllers for idle, listening, speaking, and thinking
+### Details:
+
+
+## 10.3. Develop Speech Bubble Widget [pending]
+### Dependencies: None
+### Description: Create a customizable speech bubble widget that displays assistant responses
+### Details:
+
+
+## 10.4. Implement State Management [pending]
+### Dependencies: None
+### Description: Set up state management for the avatar using Flutter's state management solutions
+### Details:
+
+
+## 10.5. Add Pop-up Animations [pending]
+### Dependencies: None
+### Description: Implement entrance and exit animations for the avatar using Flutter's animation framework
+### Details:
+
+
+## 10.6. Write Widget Tests [pending]
+### Dependencies: None
+### Description: Create Flutter widget tests to verify avatar functionality and animations
+### Details:
+
+

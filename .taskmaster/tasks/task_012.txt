@@ -5,7 +5,57 @@
 # Priority: high
 # Description: Create the UI for displaying recipe details including ingredients, tools, steps, time, and difficulty
 # Details:
-Design recipe detail screen with sections for overview, ingredients, tools, and step-by-step instructions. Implement ingredient list with quantities and optional substitutions. Create tool list with visual indicators. Implement step-by-step instruction display with progress tracking. Add estimated time and difficulty level indicators. Create UI for saving recipe to Cookbook. Implement share functionality for recipes.
+Design recipe detail screen with sections for overview, ingredients, tools, and step-by-step instructions using Flutter widgets. Implement ingredient list with quantities and optional substitutions using ListView.builder or similar Flutter components. Create tool list with visual indicators using appropriate Flutter UI elements. Implement step-by-step instruction display with progress tracking using StatefulWidget. Add estimated time and difficulty level indicators with Flutter's visual components. Create UI for saving recipe to Cookbook using Flutter's state management solution. Implement share functionality for recipes using Flutter's share package.
 
 # Test Strategy:
-Test recipe display with various recipe types and complexities. Verify all recipe information is correctly displayed. Test progress tracking through recipe steps. Ensure save and share functionality works as expected.
+Test recipe display with various recipe types and complexities using Flutter widget tests. Verify all recipe information is correctly displayed with integration tests. Test progress tracking through recipe steps with Flutter's testing framework. Ensure save and share functionality works as expected using Flutter driver tests.
+
+# Subtasks:
+## 12.1. Set up Flutter UI structure for recipe details [pending]
+### Dependencies: None
+### Description: Create the basic widget structure for the recipe detail screen
+### Details:
+
+
+## 12.2. Implement recipe overview section [pending]
+### Dependencies: None
+### Description: Create a widget to display recipe title, image, time, and difficulty using Flutter's Card and Image widgets
+### Details:
+
+
+## 12.3. Implement ingredients list [pending]
+### Dependencies: None
+### Description: Create a scrollable list of ingredients with quantities using Flutter's ListView
+### Details:
+
+
+## 12.4. Implement tools list [pending]
+### Dependencies: None
+### Description: Create a visual list of required cooking tools using Flutter icons and widgets
+### Details:
+
+
+## 12.5. Implement step-by-step instructions [pending]
+### Dependencies: None
+### Description: Create a StatefulWidget to display and track progress through recipe steps
+### Details:
+
+
+## 12.6. Add save to cookbook functionality [pending]
+### Dependencies: None
+### Description: Implement UI and state management for saving recipes to the user's cookbook
+### Details:
+
+
+## 12.7. Add recipe sharing functionality [pending]
+### Dependencies: None
+### Description: Integrate Flutter's share package to allow sharing recipes
+### Details:
+
+
+## 12.8. Write widget tests [pending]
+### Dependencies: None
+### Description: Create comprehensive widget tests for the recipe display UI components
+### Details:
+
+

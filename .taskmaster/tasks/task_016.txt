@@ -5,7 +5,57 @@
 # Priority: high
 # Description: Create the main home screen with welcome message, quick access to assistant, and suggested recipes
 # Details:
-Design home screen layout with welcome message and user stats. Implement quick access button for 'Hey Chef' assistant. Create suggested recipe carousel based on user preferences. Add recently viewed recipes section. Implement personalized content based on user level and history. Create quick search or filter functionality. Add pull-to-refresh for content updates.
+Design home screen layout with welcome message and user stats using Flutter widgets. Implement quick access button for 'Hey Chef' assistant. Create suggested recipe carousel based on user preferences using Flutter's PageView or ListView.builder. Add recently viewed recipes section with custom cards. Implement personalized content based on user level and history. Create quick search or filter functionality using Flutter's search delegate. Add pull-to-refresh for content updates using RefreshIndicator widget.
 
 # Test Strategy:
-Test home screen display with various user profiles. Verify suggested recipes match user preferences. Test assistant quick access functionality. Ensure content refreshes correctly with pull-to-refresh.
+Test home screen display with various user profiles using Flutter widget tests. Verify suggested recipes match user preferences. Test assistant quick access functionality with integration tests. Ensure content refreshes correctly with pull-to-refresh using Flutter's test framework.
+
+# Subtasks:
+## 16.1. Set up home screen StatefulWidget [pending]
+### Dependencies: None
+### Description: Create a new StatefulWidget for the home screen with proper state management
+### Details:
+
+
+## 16.2. Implement welcome message section [pending]
+### Dependencies: None
+### Description: Create a custom widget for displaying personalized welcome message and user stats
+### Details:
+
+
+## 16.3. Build 'Hey Chef' assistant quick access [pending]
+### Dependencies: None
+### Description: Implement a floating action button or prominent button for quick access to the assistant
+### Details:
+
+
+## 16.4. Create recipe carousel [pending]
+### Dependencies: None
+### Description: Build a horizontal scrolling carousel using PageView or ListView.builder for suggested recipes
+### Details:
+
+
+## 16.5. Implement recently viewed section [pending]
+### Dependencies: None
+### Description: Create a section showing recently viewed recipes with custom card widgets
+### Details:
+
+
+## 16.6. Add pull-to-refresh functionality [pending]
+### Dependencies: None
+### Description: Implement RefreshIndicator for content updates with proper state management
+### Details:
+
+
+## 16.7. Create search functionality [pending]
+### Dependencies: None
+### Description: Implement search using Flutter's SearchDelegate or custom search widget
+### Details:
+
+
+## 16.8. Write widget tests [pending]
+### Dependencies: None
+### Description: Create widget tests for home screen components using Flutter's test framework
+### Details:
+
+

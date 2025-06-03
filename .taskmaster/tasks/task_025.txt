@@ -3,9 +3,65 @@
 # Status: pending
 # Dependencies: 1, 2, 3, 4, 5, 8, 11, 14, 16, 17, 18
 # Priority: high
-# Description: Implement comprehensive testing strategy across all app features
+# Description: Implement comprehensive testing strategy across all Flutter app features
 # Details:
-Create unit tests for core functionality. Implement integration tests for key user flows. Set up end-to-end testing with Detox or similar. Create manual test plan for all features. Implement UI testing for critical screens. Set up continuous integration for automated testing. Create test documentation and reporting.
+Create unit tests for core functionality using Flutter's test package. Implement widget tests for UI components and integration tests for key user flows. Set up end-to-end testing with Flutter integration_test package or similar. Create manual test plan for all features. Implement golden tests for critical screens. Set up continuous integration for automated testing with Flutter-compatible CI tools. Create test documentation and reporting.
 
 # Test Strategy:
-Run all automated tests before each release. Conduct manual testing according to test plan. Verify all critical user flows work correctly. Test on multiple device types and OS versions. Document and track all discovered issues.
+Run all automated tests before each release. Conduct manual testing according to test plan. Verify all critical user flows work correctly. Test on multiple device types (iOS, Android) and OS versions. Document and track all discovered issues using Flutter-specific testing tools and methodologies.
+
+# Subtasks:
+## 25.1. Set up Flutter test environment [pending]
+### Dependencies: None
+### Description: Configure the project for unit, widget, and integration testing
+### Details:
+
+
+## 25.2. Create unit tests for core functionality [pending]
+### Dependencies: None
+### Description: Write tests for business logic, state management, and utility functions using Flutter's test package
+### Details:
+
+
+## 25.3. Implement widget tests [pending]
+### Dependencies: None
+### Description: Create tests for UI components using Flutter's widget testing framework
+### Details:
+
+
+## 25.4. Set up integration tests [pending]
+### Dependencies: None
+### Description: Configure and implement integration tests using Flutter's integration_test package
+### Details:
+
+
+## 25.5. Implement golden tests [pending]
+### Dependencies: None
+### Description: Set up golden tests for critical UI components to ensure visual consistency
+### Details:
+
+
+## 25.6. Create manual test plan [pending]
+### Dependencies: None
+### Description: Develop comprehensive manual testing procedures for features that require human verification
+### Details:
+
+
+## 25.7. Configure CI pipeline for testing [pending]
+### Dependencies: None
+### Description: Set up continuous integration to automatically run tests on code changes using Flutter-compatible CI tools
+### Details:
+
+
+## 25.8. Test on multiple devices [pending]
+### Dependencies: None
+### Description: Verify app functionality across various iOS and Android devices and OS versions
+### Details:
+
+
+## 25.9. Create test documentation [pending]
+### Dependencies: None
+### Description: Document testing approach, test cases, and results for the Flutter application
+### Details:
+
+

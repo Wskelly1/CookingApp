@@ -5,7 +5,57 @@
 # Priority: medium
 # Description: Implement audio playback for recipe instructions and assistant responses
 # Details:
-Research and integrate text-to-speech library for React Native. Create audio service for converting text instructions to speech. Implement playback controls (play, pause, repeat). Add voice speed adjustment feature. Create audio queue for sequential instruction playback. Implement background audio capability for continued playback when app is minimized. Add error handling for audio playback failures.
+Research and integrate text-to-speech library for Flutter. Create audio service for converting text instructions to speech. Implement playback controls (play, pause, repeat). Add voice speed adjustment feature. Create audio queue for sequential instruction playback. Implement background audio capability for continued playback when app is minimized. Add error handling for audio playback failures.
 
 # Test Strategy:
-Test audio playback of various instruction types. Verify playback controls work correctly. Test background audio functionality. Ensure proper error handling for playback failures.
+Test audio playback of various instruction types. Verify playback controls work correctly. Test background audio functionality. Ensure proper error handling for playback failures. Use Flutter's testing framework for unit and widget tests.
+
+# Subtasks:
+## 14.1. Research Flutter TTS packages [pending]
+### Dependencies: None
+### Description: Evaluate Flutter text-to-speech packages like flutter_tts, just_audio, and others for compatibility and features
+### Details:
+
+
+## 14.2. Create AudioService class [pending]
+### Dependencies: None
+### Description: Implement a Dart service class that handles text-to-speech conversion and audio playback
+### Details:
+
+
+## 14.3. Implement playback controls [pending]
+### Dependencies: None
+### Description: Create Flutter widgets for play, pause, and repeat functionality
+### Details:
+
+
+## 14.4. Add speed adjustment [pending]
+### Dependencies: None
+### Description: Implement speech rate controls using Flutter sliders or buttons
+### Details:
+
+
+## 14.5. Create audio queue system [pending]
+### Dependencies: None
+### Description: Develop a queue system in Dart for sequential instruction playback
+### Details:
+
+
+## 14.6. Implement background audio [pending]
+### Dependencies: None
+### Description: Research and implement Flutter background audio capabilities using plugins like audio_service
+### Details:
+
+
+## 14.7. Add error handling [pending]
+### Dependencies: None
+### Description: Implement robust error handling for audio playback failures in Flutter
+### Details:
+
+
+## 14.8. Write tests [pending]
+### Dependencies: None
+### Description: Create unit and widget tests for audio functionality using Flutter's test framework
+### Details:
+
+

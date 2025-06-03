@@ -5,7 +5,57 @@
 # Priority: high
 # Description: Implement recipe sourcing from external APIs based on user ingredients and tools
 # Details:
-Research and integrate reputable recipe APIs. Create recipe search service that combines LLM intelligence with API data. Implement filtering based on user dietary restrictions and preferences. Create data models for standardized recipe format. Implement caching mechanism for frequently accessed recipes. Add fallback to local recipe database for offline or API failure scenarios.
+Research and integrate reputable recipe APIs. Create recipe search service that combines LLM intelligence with API data. Implement filtering based on user dietary restrictions and preferences. Create data models for standardized recipe format in Dart. Implement caching mechanism for frequently accessed recipes using Flutter packages like Hive or shared_preferences. Add fallback to local recipe database for offline or API failure scenarios using SQLite or Hive.
 
 # Test Strategy:
-Test recipe search with various ingredient combinations. Verify dietary restriction filtering works correctly. Test API error handling and fallback mechanisms. Measure search performance and optimize as needed.
+Test recipe search with various ingredient combinations using Flutter integration tests. Verify dietary restriction filtering works correctly. Test API error handling and fallback mechanisms. Measure search performance and optimize as needed. Use Flutter's test package for unit testing API services.
+
+# Subtasks:
+## 11.1. Research and evaluate recipe APIs [pending]
+### Dependencies: None
+### Description: Research available recipe APIs that provide comprehensive data and good documentation. Consider Spoonacular, Edamam, and TheMealDB. Evaluate pricing, rate limits, and data quality.
+### Details:
+
+
+## 11.2. Create Dart models for recipe data [pending]
+### Dependencies: None
+### Description: Design and implement Dart classes for recipe data. Use JSON serialization packages like json_serializable or built_value for API response parsing.
+### Details:
+
+
+## 11.3. Implement API service in Dart [pending]
+### Dependencies: None
+### Description: Create a service class using http or dio package to handle API requests. Implement error handling, retry logic, and response parsing.
+### Details:
+
+
+## 11.4. Implement local caching with Flutter [pending]
+### Dependencies: None
+### Description: Set up local caching using Hive, shared_preferences, or SQLite (via sqflite package) to store frequently accessed recipes and reduce API calls.
+### Details:
+
+
+## 11.5. Create recipe search algorithm with LLM integration [pending]
+### Dependencies: None
+### Description: Implement intelligent recipe search that combines user ingredients with LLM suggestions. Use Flutter's compute function for heavy processing to avoid UI freezes.
+### Details:
+
+
+## 11.6. Implement dietary restriction filtering [pending]
+### Dependencies: None
+### Description: Add filtering logic based on user dietary preferences stored in app state (using Provider, Riverpod, or Bloc).
+### Details:
+
+
+## 11.7. Create offline fallback mechanism [pending]
+### Dependencies: None
+### Description: Implement offline mode that uses locally stored recipes when API is unavailable. Use connectivity_plus package to detect network status.
+### Details:
+
+
+## 11.8. Write unit and integration tests [pending]
+### Dependencies: None
+### Description: Create comprehensive tests using Flutter's test package for unit tests and integration_test for UI testing of recipe search and display.
+### Details:
+
+

@@ -3,9 +3,59 @@
 # Status: pending
 # Dependencies: 1, 2, 3, 4, 5, 16, 22, 23
 # Priority: low
-# Description: Prepare the app for deployment to App Store and Google Play
+# Description: Prepare the Flutter app for deployment to App Store and Google Play
 # Details:
-Configure app icons and splash screens for all platforms. Create app store listings and screenshots. Implement versioning system for updates. Configure build scripts for production releases. Create privacy policy and terms of service. Implement app signing for both platforms. Prepare marketing materials for launch.
+Configure app icons and splash screens for all platforms using Flutter's asset system. Create app store listings and screenshots. Implement versioning system for updates in pubspec.yaml. Configure build scripts for production releases using Flutter commands. Create privacy policy and terms of service. Implement app signing for both platforms (iOS and Android). Prepare marketing materials for launch.
 
 # Test Strategy:
-Verify app builds successfully for production. Test installation from generated packages. Ensure correct display of icons and splash screens. Verify app store metadata is complete and accurate.
+Verify Flutter app builds successfully for production using 'flutter build apk' and 'flutter build ios'. Test installation from generated packages. Ensure correct display of icons and splash screens on various devices. Verify app store metadata is complete and accurate.
+
+# Subtasks:
+## 24.1. Configure Flutter app icons [pending]
+### Dependencies: None
+### Description: Set up app icons for both iOS and Android platforms
+### Details:
+Use the flutter_launcher_icons package to generate appropriate icons for all required sizes. Configure in pubspec.yaml and run the icon generation command.
+
+## 24.2. Set up splash screens [pending]
+### Dependencies: None
+### Description: Configure splash screens for Flutter app on both platforms
+### Details:
+Use flutter_native_splash package to create and configure splash screens. Define colors, images and behavior in pubspec.yaml.
+
+## 24.3. Configure versioning [pending]
+### Dependencies: None
+### Description: Set up proper versioning in pubspec.yaml
+### Details:
+Implement semantic versioning in pubspec.yaml. Ensure version and build number are properly configured for both platforms.
+
+## 24.4. Set up Android signing [pending]
+### Dependencies: None
+### Description: Configure keystore and signing for Android release builds
+### Details:
+Generate keystore file, configure key.properties, and update android/app/build.gradle for release signing.
+
+## 24.5. Set up iOS signing [pending]
+### Dependencies: None
+### Description: Configure certificates and provisioning profiles for iOS
+### Details:
+Set up Apple Developer account, create app ID, generate certificates, and configure provisioning profiles in Xcode.
+
+## 24.6. Create app store listings [pending]
+### Dependencies: None
+### Description: Prepare metadata for App Store and Google Play
+### Details:
+Create compelling descriptions, keywords, and categorization for both stores. Prepare privacy policy and terms of service documents.
+
+## 24.7. Generate screenshots [pending]
+### Dependencies: None
+### Description: Create screenshots for all required device sizes
+### Details:
+Use Flutter's integration testing or screenshot tools to generate consistent screenshots across all required device sizes for both platforms.
+
+## 24.8. Configure CI/CD for Flutter builds [pending]
+### Dependencies: None
+### Description: Set up automated build pipeline for Flutter app
+### Details:
+Configure CI/CD pipeline (using GitHub Actions, Codemagic, or similar) to automate the build and release process for both platforms.
+

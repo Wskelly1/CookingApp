@@ -5,7 +5,51 @@
 # Priority: medium
 # Description: Implement 'Hey Chef' voice activation and speech recognition for the assistant
 # Details:
-Research and integrate speech recognition library for React Native. Implement background listening for 'Hey Chef' wake phrase. Create voice command parser for ingredient and tool input. Implement audio feedback for successful activation. Create UI indicator for active listening state. Implement permission handling for microphone access. Add error handling for speech recognition failures.
+Research and integrate speech recognition libraries for Flutter. Implement background listening for 'Hey Chef' wake phrase. Create voice command parser for ingredient and tool input. Implement audio feedback for successful activation. Create UI indicator for active listening state. Implement permission handling for microphone access. Add error handling for speech recognition failures.
 
 # Test Strategy:
-Test wake phrase detection with various accents and background noise levels. Verify ingredient and tool recognition accuracy. Test microphone permission flow. Ensure proper error handling for recognition failures.
+Test wake phrase detection with various accents and background noise levels. Verify ingredient and tool recognition accuracy. Test microphone permission flow. Ensure proper error handling for recognition failures. Use Flutter's testing framework for unit and widget tests.
+
+# Subtasks:
+## 9.1. Research Flutter speech recognition packages [pending]
+### Dependencies: None
+### Description: Evaluate speech_to_text, flutter_voice_processor, and other Flutter packages for speech recognition capabilities
+### Details:
+
+
+## 9.2. Implement microphone permissions in Flutter [pending]
+### Dependencies: None
+### Description: Add necessary permission handlers for microphone access in Android and iOS using Flutter permissions plugins
+### Details:
+
+
+## 9.3. Create wake phrase detection service [pending]
+### Dependencies: None
+### Description: Implement a Dart service that listens for the 'Hey Chef' wake phrase using the selected speech recognition package
+### Details:
+
+
+## 9.4. Develop voice command parser in Dart [pending]
+### Dependencies: None
+### Description: Create a parser to interpret spoken commands for ingredients and tools
+### Details:
+
+
+## 9.5. Implement audio feedback widget [pending]
+### Dependencies: None
+### Description: Create a Flutter widget that provides audio feedback when voice commands are recognized
+### Details:
+
+
+## 9.6. Design active listening UI indicator [pending]
+### Dependencies: None
+### Description: Develop a Flutter animation or UI element that indicates when the system is actively listening
+### Details:
+
+
+## 9.7. Add error handling for speech recognition [pending]
+### Dependencies: None
+### Description: Implement robust error handling for speech recognition failures in the Flutter app
+### Details:
+
+

@@ -3,65 +3,101 @@
     {
       "id": 1,
       "title": "Project Setup and Configuration",
-      "description": "Initialize React Native project with necessary configurations for iOS and Android platforms",
+      "description": "Initialize Flutter project with necessary configurations for iOS and Android platforms",
       "status": "in-progress",
       "dependencies": [],
       "priority": "high",
-      "details": "Create a new React Native project using the latest CLI version with TypeScript support. Configure project structure following best practices with directories for components, screens, assets, navigation, and utils. Set up ESLint, Prettier, and TypeScript for code quality. Initialize Git repository and create initial commit. Configure environment variables for development, staging, and production environments. Set up shadcn component library integration for consistent UI components. Install and configure navigation and async storage dependencies.",
-      "testStrategy": "Verify project builds successfully on Android simulator. Note that iOS build requires Xcode installation and proper configuration. Ensure all development scripts work as expected. Validate TypeScript configuration with sample components.",
+      "details": "Create a new Flutter project using the latest Flutter SDK with Dart support. Configure project structure following best practices with directories for components, screens, assets, navigation, and utils. Set up Dart analysis options and code formatting for code quality. Initialize Git repository and create initial commit. Configure environment variables for development, staging, and production environments. Set up Material Components or Flutter widgets for consistent UI components. Install and configure navigation and shared preferences dependencies.",
+      "testStrategy": "Verify project builds successfully on Android simulator. Note that iOS build requires Xcode installation and proper configuration. Ensure all development scripts work as expected. Validate Dart configuration with sample widgets.",
       "subtasks": [
         {
-          "id": 1.1,
+          "id": "1.1",
           "title": "Create React Native project with TypeScript",
           "status": "done"
         },
         {
-          "id": 1.2,
+          "id": "1.2",
           "title": "Set up project structure",
           "description": "Create src/components, src/screens, src/assets, src/navigation, src/utils directories",
           "status": "done"
         },
         {
-          "id": 1.3,
+          "id": "1.3",
           "title": "Initialize Git repository",
           "status": "done"
         },
         {
-          "id": 1.4,
+          "id": "1.4",
           "title": "Configure ESLint and Prettier",
           "status": "done"
         },
         {
-          "id": 1.5,
+          "id": "1.5",
           "title": "Set up environment variables",
           "status": "done"
         },
         {
-          "id": 1.6,
+          "id": "1.6",
           "title": "Integrate shadcn component library",
           "status": "done"
         },
         {
-          "id": 1.7,
+          "id": "1.7",
           "title": "Install navigation and async storage dependencies",
           "status": "done"
         },
         {
-          "id": 1.8,
+          "id": "1.11",
+          "title": "Create new Flutter project",
+          "description": "Create a new Flutter project using 'flutter create' command to replace the React Native project",
+          "status": "to-do"
+        },
+        {
+          "id": "1.12",
+          "title": "Migrate project structure to Flutter conventions",
+          "description": "Adapt the existing structure to Flutter conventions with lib/widgets, lib/screens, lib/models, etc.",
+          "status": "to-do"
+        },
+        {
+          "id": "1.13",
+          "title": "Configure Dart analysis options",
+          "description": "Set up analysis_options.yaml for Dart linting and code style",
+          "status": "to-do"
+        },
+        {
+          "id": "1.14",
+          "title": "Set up Flutter environment configuration",
+          "description": "Configure environment variables using Flutter-appropriate methods like .env files with flutter_dotenv",
+          "status": "to-do"
+        },
+        {
+          "id": "1.15",
+          "title": "Set up Material Components or Flutter widget library",
+          "description": "Configure Material Design components or another widget library to replace shadcn",
+          "status": "to-do"
+        },
+        {
+          "id": "1.16",
+          "title": "Install Flutter navigation and shared preferences",
+          "description": "Add dependencies for navigation (e.g., go_router) and shared preferences for local storage",
+          "status": "to-do"
+        },
+        {
+          "id": "1.8",
           "title": "Test Android build",
           "description": "Verify project builds successfully on Android simulator/emulator",
           "status": "to-do"
         },
         {
-          "id": 1.9,
+          "id": "1.9",
           "title": "Document iOS build requirements",
           "description": "Document that Xcode installation and proper configuration is required for iOS builds",
           "status": "to-do"
         },
         {
-          "id": 1.1,
-          "title": "Validate TypeScript with sample component",
-          "description": "Create a sample component to validate TypeScript configuration is working correctly",
+          "id": "1.17",
+          "title": "Validate Dart with sample widget",
+          "description": "Create a sample widget to validate Dart configuration is working correctly",
           "status": "to-do"
         }
       ]
@@ -70,314 +106,1346 @@
       "id": 2,
       "title": "Supabase Backend Integration",
       "description": "Set up Supabase project and configure authentication and database services",
-      "details": "Create a new Supabase project. Configure authentication with email/password sign-up and sign-in. Set up database tables for user profiles, preferences, saved recipes, and progress tracking. Create necessary database schemas with appropriate relationships. Implement Row Level Security (RLS) policies for data protection. Generate API keys and configure environment variables for the React Native app.",
-      "testStrategy": "Test authentication flow with sample user accounts. Verify database operations (CRUD) for all tables. Ensure RLS policies correctly restrict access to user data.",
-      "priority": "high",
+      "status": "pending",
       "dependencies": [
         1
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "high",
+      "details": "Create a new Supabase project. Configure authentication with email/password sign-up and sign-in. Set up database tables for user profiles, preferences, saved recipes, and progress tracking. Create necessary database schemas with appropriate relationships. Implement Row Level Security (RLS) policies for data protection. Generate API keys and configure environment variables for the Flutter app.",
+      "testStrategy": "Test authentication flow with sample user accounts. Verify database operations (CRUD) for all tables. Ensure RLS policies correctly restrict access to user data. Use Flutter testing tools to validate integration.",
+      "subtasks": [
+        {
+          "id": "2.1",
+          "title": "Set up Supabase project",
+          "description": "Create a new Supabase project and configure basic settings",
+          "status": "pending"
+        },
+        {
+          "id": "2.2",
+          "title": "Add Supabase packages to Flutter project",
+          "description": "Add supabase_flutter and other necessary packages to pubspec.yaml and run flutter pub get",
+          "status": "pending"
+        },
+        {
+          "id": "2.3",
+          "title": "Configure authentication",
+          "description": "Set up email/password authentication in Supabase and implement in Flutter app",
+          "status": "pending"
+        },
+        {
+          "id": "2.4",
+          "title": "Create database schemas",
+          "description": "Design and implement database tables with proper relationships",
+          "status": "pending"
+        },
+        {
+          "id": "2.5",
+          "title": "Implement RLS policies",
+          "description": "Set up Row Level Security to protect user data",
+          "status": "pending"
+        },
+        {
+          "id": "2.6",
+          "title": "Configure environment variables",
+          "description": "Set up environment variables in Flutter for Supabase API keys and URLs",
+          "status": "pending"
+        },
+        {
+          "id": "2.7",
+          "title": "Create Dart models",
+          "description": "Create Dart model classes that correspond to Supabase database tables",
+          "status": "pending"
+        },
+        {
+          "id": "2.8",
+          "title": "Implement Supabase service class",
+          "description": "Create a service class to handle all Supabase interactions in the Flutter app",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 3,
       "title": "Global UI Design System",
-      "description": "Implement a comprehensive design system with shadcn components for consistent UI across the app",
-      "details": "Create a global theme provider with color palette definitions for both light and dark modes. Set up typography system with font families, sizes, and weights. Implement spacing system with consistent values. Create reusable component library using shadcn components, including buttons, inputs, cards, modals, and navigation elements. Implement responsive design utilities for different screen sizes. Document all UI components and their usage patterns.",
-      "testStrategy": "Create a storybook or component showcase screen to verify all UI components. Test components across different device sizes. Ensure dark/light mode toggle works correctly for all components.",
-      "priority": "high",
+      "description": "Implement a comprehensive design system with Flutter components for consistent UI across the app",
+      "status": "pending",
       "dependencies": [
         1
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "high",
+      "details": "Create a global theme provider with color palette definitions for both light and dark modes using Flutter's ThemeData. Set up typography system with font families, sizes, and weights using TextTheme. Implement spacing system with consistent values through a custom spacing class. Create reusable component library using Flutter widgets, including buttons, inputs, cards, modals, and navigation elements. Implement responsive design utilities for different screen sizes using LayoutBuilder and MediaQuery. Document all UI components and their usage patterns.",
+      "testStrategy": "Create a widget catalog or component showcase screen to verify all UI components. Test components across different device sizes using Flutter's DevicePreview package. Ensure dark/light mode toggle works correctly for all components using Flutter's theme system.",
+      "subtasks": [
+        {
+          "id": "3.1",
+          "title": "Set up ThemeData configuration",
+          "description": "Create theme configuration with ColorScheme for light and dark modes",
+          "status": "pending"
+        },
+        {
+          "id": "3.2",
+          "title": "Implement Typography system",
+          "description": "Configure TextTheme with appropriate font families, sizes, and weights",
+          "status": "pending"
+        },
+        {
+          "id": "3.3",
+          "title": "Create spacing constants",
+          "description": "Define a consistent spacing system with a dedicated class for padding and margin values",
+          "status": "pending"
+        },
+        {
+          "id": "3.4",
+          "title": "Build button component variants",
+          "description": "Implement primary, secondary, outline, and text button styles using ElevatedButton, OutlinedButton, and TextButton",
+          "status": "pending"
+        },
+        {
+          "id": "3.5",
+          "title": "Create input field components",
+          "description": "Build TextField variants with consistent styling and validation patterns",
+          "status": "pending"
+        },
+        {
+          "id": "3.6",
+          "title": "Implement card and container components",
+          "description": "Create Card and Container widgets with consistent elevation, border radius, and padding",
+          "status": "pending"
+        },
+        {
+          "id": "3.7",
+          "title": "Build dialog and modal components",
+          "description": "Implement reusable Dialog and BottomSheet components with consistent styling",
+          "status": "pending"
+        },
+        {
+          "id": "3.8",
+          "title": "Create responsive layout utilities",
+          "description": "Build helper widgets using MediaQuery and LayoutBuilder for responsive designs",
+          "status": "pending"
+        },
+        {
+          "id": "3.9",
+          "title": "Implement theme toggle functionality",
+          "description": "Create a theme service using Provider or Riverpod for managing theme state",
+          "status": "pending"
+        },
+        {
+          "id": "3.1",
+          "title": "Build component showcase screen",
+          "description": "Create a dedicated screen displaying all UI components for testing and documentation",
+          "status": "pending"
+        },
+        {
+          "id": "3.11",
+          "title": "Document component usage",
+          "description": "Create documentation for all UI components with usage examples and parameters",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 4,
       "title": "Navigation System Implementation",
       "description": "Set up the app's navigation structure with bottom navigation bar and screen transitions",
-      "details": "Implement React Navigation library for app navigation. Create bottom tab navigator with Home, Search, Cookbook, and Profile tabs. Set up stack navigators for each main section. Implement navigation service for programmatic navigation. Configure screen transitions and animations. Implement deep linking support for future use. Create navigation guards for authenticated routes.",
-      "testStrategy": "Test navigation flow between all screens. Verify bottom tab navigation works correctly. Ensure proper handling of back navigation. Test deep linking functionality.",
-      "priority": "high",
+      "status": "pending",
       "dependencies": [
         1,
         3
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "high",
+      "details": "Implement Flutter navigation system for app routing. Create a bottom navigation bar with Home, Search, Cookbook, and Profile tabs. Set up named routes for each main section. Implement a navigation service for programmatic navigation. Configure screen transitions and animations using Hero widgets and page transitions. Implement deep linking support for future use. Create navigation guards for authenticated routes using route observers.",
+      "testStrategy": "Test navigation flow between all screens. Verify bottom tab navigation works correctly. Ensure proper handling of back navigation. Test deep linking functionality. Write widget tests for navigation components. Use Flutter integration tests to verify navigation flows.",
+      "subtasks": [
+        {
+          "id": "4.1",
+          "title": "Set up basic navigation structure",
+          "description": "Implement the core navigation system using Flutter's navigation APIs",
+          "status": "pending"
+        },
+        {
+          "id": "4.2",
+          "title": "Create bottom navigation bar",
+          "description": "Implement BottomNavigationBar widget with the required tabs and icons",
+          "status": "pending"
+        },
+        {
+          "id": "4.3",
+          "title": "Configure named routes",
+          "description": "Set up named routes for all screens in the app using Flutter's route management",
+          "status": "pending"
+        },
+        {
+          "id": "4.4",
+          "title": "Implement navigation service",
+          "description": "Create a navigation service class that allows for programmatic navigation from anywhere in the app",
+          "status": "pending"
+        },
+        {
+          "id": "4.5",
+          "title": "Add screen transitions",
+          "description": "Configure custom page transitions using PageRouteBuilder or transition packages",
+          "status": "pending"
+        },
+        {
+          "id": "4.6",
+          "title": "Implement deep linking",
+          "description": "Set up deep linking support using uni_links package and configure AndroidManifest.xml and Info.plist",
+          "status": "pending"
+        },
+        {
+          "id": "4.7",
+          "title": "Create authentication route guards",
+          "description": "Implement route observers to protect authenticated routes",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 5,
       "title": "Authentication and User Management",
       "description": "Implement user authentication flow including sign-up, sign-in, and password recovery",
-      "details": "Create authentication screens (sign-up, sign-in, forgot password). Implement form validation for all authentication inputs. Connect authentication forms to Supabase auth services. Implement secure token storage and refresh mechanism. Create authentication context provider for global auth state. Implement sign-out functionality. Add error handling and user feedback for authentication processes.",
-      "testStrategy": "Test complete authentication flow including sign-up, sign-in, and password recovery. Verify form validation works correctly. Test token refresh mechanism. Ensure proper error handling for authentication failures.",
-      "priority": "high",
+      "status": "pending",
       "dependencies": [
         2,
         4
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "high",
+      "details": "Create authentication screens (sign-up, sign-in, forgot password) using Flutter widgets. Implement form validation for all authentication inputs using Flutter's form validation. Connect authentication forms to Supabase auth services using the Supabase Flutter SDK. Implement secure token storage and refresh mechanism with Flutter Secure Storage. Create authentication state management using Provider or Riverpod for global auth state. Implement sign-out functionality. Add error handling and user feedback for authentication processes with Flutter snackbars or dialogs.",
+      "testStrategy": "Test complete authentication flow including sign-up, sign-in, and password recovery. Verify form validation works correctly. Test token refresh mechanism. Ensure proper error handling for authentication failures. Write widget tests for authentication screens and integration tests for the full authentication flow.",
+      "subtasks": [
+        {
+          "id": "5.1",
+          "title": "Create authentication UI screens",
+          "description": "Design and implement sign-up, sign-in, and forgot password screens using Flutter widgets",
+          "status": "pending"
+        },
+        {
+          "id": "5.2",
+          "title": "Implement form validation",
+          "description": "Add validation for email, password, and other form fields using Flutter's Form and TextFormField widgets",
+          "status": "pending"
+        },
+        {
+          "id": "5.3",
+          "title": "Integrate Supabase authentication",
+          "description": "Connect to Supabase using the supabase_flutter package and implement authentication methods",
+          "status": "pending"
+        },
+        {
+          "id": "5.4",
+          "title": "Implement secure token storage",
+          "description": "Use flutter_secure_storage to securely store and manage authentication tokens",
+          "status": "pending"
+        },
+        {
+          "id": "5.5",
+          "title": "Create authentication state management",
+          "description": "Implement state management for authentication using Provider or Riverpod",
+          "status": "pending"
+        },
+        {
+          "id": "5.6",
+          "title": "Add error handling and user feedback",
+          "description": "Implement error handling for authentication processes with appropriate user feedback using SnackBar or AlertDialog",
+          "status": "pending"
+        },
+        {
+          "id": "5.7",
+          "title": "Write tests for authentication flow",
+          "description": "Create widget tests and integration tests to verify the authentication functionality",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 6,
       "title": "User Onboarding Flow",
       "description": "Create the onboarding experience for new users to collect preferences and experience level",
-      "details": "Design multi-step onboarding flow with progress indicator. Create screens for: cooking experience selection (beginner, intermediate, advanced), dietary restrictions selection (gluten-free, vegan, vegetarian, etc.), food preferences input, purpose for downloading, and referral source. Implement data collection and storage in Supabase. Create skip functionality for optional steps. Implement onboarding completion tracking.",
-      "testStrategy": "Test complete onboarding flow with various user inputs. Verify all user preferences are correctly saved to the database. Test skipping optional steps. Ensure onboarding can be completed successfully.",
-      "priority": "high",
+      "status": "pending",
       "dependencies": [
         3,
         5
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "high",
+      "details": "Design multi-step onboarding flow with progress indicator using Flutter widgets. Create screens for: cooking experience selection (beginner, intermediate, advanced), dietary restrictions selection (gluten-free, vegan, vegetarian, etc.), food preferences input, purpose for downloading, and referral source. Implement data collection and storage in Supabase using the Supabase Flutter SDK. Create skip functionality for optional steps. Implement onboarding completion tracking with shared preferences or Supabase.",
+      "testStrategy": "Test complete onboarding flow with various user inputs using Flutter widget tests and integration tests. Verify all user preferences are correctly saved to the database. Test skipping optional steps. Ensure onboarding can be completed successfully. Use Flutter's test framework to validate UI components and state management.",
+      "subtasks": [
+        {
+          "id": "6.1",
+          "title": "Set up onboarding screens structure",
+          "description": "Create the basic Flutter widget structure for the onboarding flow",
+          "status": "pending"
+        },
+        {
+          "id": "6.2",
+          "title": "Implement progress indicator",
+          "description": "Create a custom progress indicator widget or use a Flutter package like step_progress_indicator to show user progress through onboarding",
+          "status": "pending"
+        },
+        {
+          "id": "6.3",
+          "title": "Build experience level selection screen",
+          "description": "Implement UI for selecting cooking experience level using Flutter widgets like Radio or custom selection cards",
+          "status": "pending"
+        },
+        {
+          "id": "6.4",
+          "title": "Build dietary restrictions screen",
+          "description": "Create multi-select UI for dietary restrictions using CheckboxListTile or custom widgets",
+          "status": "pending"
+        },
+        {
+          "id": "6.5",
+          "title": "Implement food preferences input",
+          "description": "Create UI for inputting food preferences with appropriate Flutter form widgets",
+          "status": "pending"
+        },
+        {
+          "id": "6.6",
+          "title": "Create purpose and referral screens",
+          "description": "Implement screens for collecting app purpose and referral source information",
+          "status": "pending"
+        },
+        {
+          "id": "6.7",
+          "title": "Implement Supabase integration",
+          "description": "Set up Supabase Flutter SDK and implement data storage for user preferences",
+          "status": "pending"
+        },
+        {
+          "id": "6.8",
+          "title": "Add skip functionality",
+          "description": "Implement skip buttons and logic for optional steps in the onboarding flow",
+          "status": "pending"
+        },
+        {
+          "id": "6.9",
+          "title": "Track onboarding completion",
+          "description": "Implement logic to track and store onboarding completion status using shared_preferences or Supabase",
+          "status": "pending"
+        },
+        {
+          "id": "6.1",
+          "title": "Write widget and integration tests",
+          "description": "Create comprehensive tests for the onboarding flow using Flutter's test framework",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 7,
       "title": "User Profile Management",
       "description": "Implement user profile screen with ability to view and edit personal information and preferences",
-      "details": "Create profile screen with user information display. Implement edit functionality for all profile fields. Create UI for updating cooking experience, dietary restrictions, and food preferences. Implement profile picture upload and management. Add settings section for app preferences (notifications, theme). Connect profile updates to Supabase database. Implement local storage for offline profile access.",
-      "testStrategy": "Test viewing and editing all profile fields. Verify changes are persisted to the database. Test profile picture upload and display. Ensure profile data is available offline.",
-      "priority": "medium",
+      "status": "pending",
       "dependencies": [
         5,
         6
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "medium",
+      "details": "Create profile screen with user information display using Flutter widgets. Implement edit functionality for all profile fields with Flutter form components. Create UI for updating cooking experience, dietary restrictions, and food preferences using Flutter's material design components. Implement profile picture upload and management using Flutter image picker and file handling. Add settings section for app preferences (notifications, theme) using Flutter's ThemeData and notification plugins. Connect profile updates to Supabase database using the supabase_flutter package. Implement local storage for offline profile access using shared_preferences or hive.",
+      "testStrategy": "Test viewing and editing all profile fields using Flutter widget tests and integration tests. Verify changes are persisted to the database using mock Supabase services. Test profile picture upload and display with Flutter's TestWidgets. Ensure profile data is available offline through local storage tests.",
+      "subtasks": [
+        {
+          "id": "7.1",
+          "title": "Create Flutter profile screen layout",
+          "description": "Design and implement the profile screen UI using Flutter widgets",
+          "status": "pending"
+        },
+        {
+          "id": "7.2",
+          "title": "Implement profile editing with Flutter forms",
+          "description": "Create editable form fields for all user profile information using Flutter's form widgets and validation",
+          "status": "pending"
+        },
+        {
+          "id": "7.3",
+          "title": "Implement profile picture management",
+          "description": "Add functionality to select, crop, and upload profile pictures using image_picker and image_cropper packages",
+          "status": "pending"
+        },
+        {
+          "id": "7.4",
+          "title": "Create preferences UI components",
+          "description": "Implement UI for food preferences, dietary restrictions, and cooking experience using Flutter dropdown, checkbox, and slider widgets",
+          "status": "pending"
+        },
+        {
+          "id": "7.5",
+          "title": "Implement settings section",
+          "description": "Create settings UI for app preferences using Flutter's Switch, Radio, and other input widgets",
+          "status": "pending"
+        },
+        {
+          "id": "7.6",
+          "title": "Connect to Supabase with Flutter",
+          "description": "Implement Supabase integration using supabase_flutter package for profile data storage and retrieval",
+          "status": "pending"
+        },
+        {
+          "id": "7.7",
+          "title": "Implement offline storage",
+          "description": "Add local storage functionality using shared_preferences or hive package for offline profile access",
+          "status": "pending"
+        },
+        {
+          "id": "7.8",
+          "title": "Write Flutter widget and integration tests",
+          "description": "Create comprehensive tests for profile functionality using Flutter's testing framework",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 8,
       "title": "LLM API Integration",
       "description": "Integrate OpenAI or similar LLM API for the 'Hey Chef' assistant functionality",
-      "details": "Research and select appropriate LLM API (OpenAI, etc.). Create API service for LLM communication. Implement prompt engineering for recipe sourcing based on ingredients and tools. Create response parsing for structured recipe data. Implement error handling and retry logic for API failures. Set up caching mechanism for common queries to reduce API calls. Create fallback responses for when the API is unavailable.",
-      "testStrategy": "Test API integration with various ingredient and tool combinations. Verify response parsing correctly extracts recipe information. Test error handling with simulated API failures. Measure response times and optimize as needed.",
-      "priority": "high",
+      "status": "pending",
       "dependencies": [
         2
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "high",
+      "details": "Research and select appropriate LLM API (OpenAI, etc.). Create Dart service class for LLM communication. Implement prompt engineering for recipe sourcing based on ingredients and tools. Create response parsing for structured recipe data in Dart. Implement error handling and retry logic for API failures using Flutter best practices. Set up caching mechanism for common queries to reduce API calls (consider using shared_preferences or hive). Create fallback responses for when the API is unavailable.",
+      "testStrategy": "Test API integration with various ingredient and tool combinations using Flutter test framework. Verify response parsing correctly extracts recipe information. Test error handling with simulated API failures. Measure response times and optimize as needed. Use Flutter's integration testing capabilities to verify end-to-end functionality.",
+      "subtasks": [
+        {
+          "id": "8.1",
+          "title": "Research and select Flutter-compatible LLM API package",
+          "status": "pending",
+          "details": "Evaluate packages like dart_openai, langchain_dart, or other Flutter-compatible LLM API clients. Consider factors like documentation, community support, and compatibility with Flutter."
+        },
+        {
+          "id": "8.2",
+          "title": "Create API service class in Dart",
+          "status": "pending",
+          "details": "Implement a service class following Flutter best practices that handles communication with the selected LLM API. Use dependency injection for better testability."
+        },
+        {
+          "id": "8.3",
+          "title": "Implement caching with Flutter storage solutions",
+          "status": "pending",
+          "details": "Set up a caching mechanism using Flutter-appropriate storage solutions like shared_preferences, hive, or sqflite to reduce API calls for common queries."
+        },
+        {
+          "id": "8.4",
+          "title": "Create Dart models for structured recipe data",
+          "status": "pending",
+          "details": "Define Dart classes with proper typing to represent recipe data returned from the LLM. Implement fromJson/toJson methods for serialization."
+        },
+        {
+          "id": "8.5",
+          "title": "Write unit and integration tests",
+          "status": "pending",
+          "details": "Create comprehensive tests using Flutter's testing framework to verify API integration, response parsing, and error handling."
+        }
+      ]
     },
     {
       "id": 9,
       "title": "Voice Activation System",
       "description": "Implement 'Hey Chef' voice activation and speech recognition for the assistant",
-      "details": "Research and integrate speech recognition library for React Native. Implement background listening for 'Hey Chef' wake phrase. Create voice command parser for ingredient and tool input. Implement audio feedback for successful activation. Create UI indicator for active listening state. Implement permission handling for microphone access. Add error handling for speech recognition failures.",
-      "testStrategy": "Test wake phrase detection with various accents and background noise levels. Verify ingredient and tool recognition accuracy. Test microphone permission flow. Ensure proper error handling for recognition failures.",
-      "priority": "medium",
+      "status": "pending",
       "dependencies": [
         8
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "medium",
+      "details": "Research and integrate speech recognition libraries for Flutter. Implement background listening for 'Hey Chef' wake phrase. Create voice command parser for ingredient and tool input. Implement audio feedback for successful activation. Create UI indicator for active listening state. Implement permission handling for microphone access. Add error handling for speech recognition failures.",
+      "testStrategy": "Test wake phrase detection with various accents and background noise levels. Verify ingredient and tool recognition accuracy. Test microphone permission flow. Ensure proper error handling for recognition failures. Use Flutter's testing framework for unit and widget tests.",
+      "subtasks": [
+        {
+          "id": "9.1",
+          "title": "Research Flutter speech recognition packages",
+          "description": "Evaluate speech_to_text, flutter_voice_processor, and other Flutter packages for speech recognition capabilities",
+          "status": "pending"
+        },
+        {
+          "id": "9.2",
+          "title": "Implement microphone permissions in Flutter",
+          "description": "Add necessary permission handlers for microphone access in Android and iOS using Flutter permissions plugins",
+          "status": "pending"
+        },
+        {
+          "id": "9.3",
+          "title": "Create wake phrase detection service",
+          "description": "Implement a Dart service that listens for the 'Hey Chef' wake phrase using the selected speech recognition package",
+          "status": "pending"
+        },
+        {
+          "id": "9.4",
+          "title": "Develop voice command parser in Dart",
+          "description": "Create a parser to interpret spoken commands for ingredients and tools",
+          "status": "pending"
+        },
+        {
+          "id": "9.5",
+          "title": "Implement audio feedback widget",
+          "description": "Create a Flutter widget that provides audio feedback when voice commands are recognized",
+          "status": "pending"
+        },
+        {
+          "id": "9.6",
+          "title": "Design active listening UI indicator",
+          "description": "Develop a Flutter animation or UI element that indicates when the system is actively listening",
+          "status": "pending"
+        },
+        {
+          "id": "9.7",
+          "title": "Add error handling for speech recognition",
+          "description": "Implement robust error handling for speech recognition failures in the Flutter app",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 10,
       "title": "Chef Avatar UI Component",
       "description": "Create the pop-up chef avatar that appears during assistant interactions",
-      "details": "Design animated chef avatar with different states (idle, listening, speaking, thinking). Implement pop-up animation for avatar appearance and dismissal. Create speech bubble or text display for assistant responses. Implement avatar state management based on interaction context. Add subtle animations for improved user experience. Ensure avatar is non-intrusive but helpful during cooking process.",
-      "testStrategy": "Test avatar animations and state transitions. Verify avatar correctly responds to different interaction states. Test avatar on different screen sizes to ensure proper scaling and positioning.",
-      "priority": "medium",
+      "status": "pending",
       "dependencies": [
         3,
         8
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "medium",
+      "details": "Design animated chef avatar with different states (idle, listening, speaking, thinking) using Flutter animations. Implement pop-up animation for avatar appearance and dismissal with Flutter's animation controllers. Create speech bubble or text display for assistant responses using Flutter widgets. Implement avatar state management based on interaction context using Flutter state management (Provider, Bloc, or Riverpod). Add subtle animations for improved user experience with Flutter's animation framework. Ensure avatar is non-intrusive but helpful during cooking process.",
+      "testStrategy": "Test avatar animations and state transitions using Flutter widget tests. Verify avatar correctly responds to different interaction states with integration tests. Test avatar on different screen sizes to ensure proper scaling and positioning using Flutter's device preview or test on various emulators.",
+      "subtasks": [
+        {
+          "id": "10.1",
+          "title": "Create Chef Avatar Widget",
+          "description": "Implement the base Flutter widget for the chef avatar",
+          "status": "pending"
+        },
+        {
+          "id": "10.2",
+          "title": "Implement Animation States",
+          "description": "Create different animation states using Flutter's animation controllers for idle, listening, speaking, and thinking",
+          "status": "pending"
+        },
+        {
+          "id": "10.3",
+          "title": "Develop Speech Bubble Widget",
+          "description": "Create a customizable speech bubble widget that displays assistant responses",
+          "status": "pending"
+        },
+        {
+          "id": "10.4",
+          "title": "Implement State Management",
+          "description": "Set up state management for the avatar using Flutter's state management solutions",
+          "status": "pending"
+        },
+        {
+          "id": "10.5",
+          "title": "Add Pop-up Animations",
+          "description": "Implement entrance and exit animations for the avatar using Flutter's animation framework",
+          "status": "pending"
+        },
+        {
+          "id": "10.6",
+          "title": "Write Widget Tests",
+          "description": "Create Flutter widget tests to verify avatar functionality and animations",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 11,
       "title": "Recipe Sourcing and API Integration",
       "description": "Implement recipe sourcing from external APIs based on user ingredients and tools",
-      "details": "Research and integrate reputable recipe APIs. Create recipe search service that combines LLM intelligence with API data. Implement filtering based on user dietary restrictions and preferences. Create data models for standardized recipe format. Implement caching mechanism for frequently accessed recipes. Add fallback to local recipe database for offline or API failure scenarios.",
-      "testStrategy": "Test recipe search with various ingredient combinations. Verify dietary restriction filtering works correctly. Test API error handling and fallback mechanisms. Measure search performance and optimize as needed.",
-      "priority": "high",
+      "status": "pending",
       "dependencies": [
         8
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "high",
+      "details": "Research and integrate reputable recipe APIs. Create recipe search service that combines LLM intelligence with API data. Implement filtering based on user dietary restrictions and preferences. Create data models for standardized recipe format in Dart. Implement caching mechanism for frequently accessed recipes using Flutter packages like Hive or shared_preferences. Add fallback to local recipe database for offline or API failure scenarios using SQLite or Hive.",
+      "testStrategy": "Test recipe search with various ingredient combinations using Flutter integration tests. Verify dietary restriction filtering works correctly. Test API error handling and fallback mechanisms. Measure search performance and optimize as needed. Use Flutter's test package for unit testing API services.",
+      "subtasks": [
+        {
+          "id": "11.1",
+          "title": "Research and evaluate recipe APIs",
+          "status": "pending",
+          "description": "Research available recipe APIs that provide comprehensive data and good documentation. Consider Spoonacular, Edamam, and TheMealDB. Evaluate pricing, rate limits, and data quality."
+        },
+        {
+          "id": "11.2",
+          "title": "Create Dart models for recipe data",
+          "status": "pending",
+          "description": "Design and implement Dart classes for recipe data. Use JSON serialization packages like json_serializable or built_value for API response parsing."
+        },
+        {
+          "id": "11.3",
+          "title": "Implement API service in Dart",
+          "status": "pending",
+          "description": "Create a service class using http or dio package to handle API requests. Implement error handling, retry logic, and response parsing."
+        },
+        {
+          "id": "11.4",
+          "title": "Implement local caching with Flutter",
+          "status": "pending",
+          "description": "Set up local caching using Hive, shared_preferences, or SQLite (via sqflite package) to store frequently accessed recipes and reduce API calls."
+        },
+        {
+          "id": "11.5",
+          "title": "Create recipe search algorithm with LLM integration",
+          "status": "pending",
+          "description": "Implement intelligent recipe search that combines user ingredients with LLM suggestions. Use Flutter's compute function for heavy processing to avoid UI freezes."
+        },
+        {
+          "id": "11.6",
+          "title": "Implement dietary restriction filtering",
+          "status": "pending",
+          "description": "Add filtering logic based on user dietary preferences stored in app state (using Provider, Riverpod, or Bloc)."
+        },
+        {
+          "id": "11.7",
+          "title": "Create offline fallback mechanism",
+          "status": "pending",
+          "description": "Implement offline mode that uses locally stored recipes when API is unavailable. Use connectivity_plus package to detect network status."
+        },
+        {
+          "id": "11.8",
+          "title": "Write unit and integration tests",
+          "status": "pending",
+          "description": "Create comprehensive tests using Flutter's test package for unit tests and integration_test for UI testing of recipe search and display."
+        }
+      ]
     },
     {
       "id": 12,
       "title": "Recipe Display UI",
       "description": "Create the UI for displaying recipe details including ingredients, tools, steps, time, and difficulty",
-      "details": "Design recipe detail screen with sections for overview, ingredients, tools, and step-by-step instructions. Implement ingredient list with quantities and optional substitutions. Create tool list with visual indicators. Implement step-by-step instruction display with progress tracking. Add estimated time and difficulty level indicators. Create UI for saving recipe to Cookbook. Implement share functionality for recipes.",
-      "testStrategy": "Test recipe display with various recipe types and complexities. Verify all recipe information is correctly displayed. Test progress tracking through recipe steps. Ensure save and share functionality works as expected.",
-      "priority": "high",
+      "status": "pending",
       "dependencies": [
         3,
         11
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "high",
+      "details": "Design recipe detail screen with sections for overview, ingredients, tools, and step-by-step instructions using Flutter widgets. Implement ingredient list with quantities and optional substitutions using ListView.builder or similar Flutter components. Create tool list with visual indicators using appropriate Flutter UI elements. Implement step-by-step instruction display with progress tracking using StatefulWidget. Add estimated time and difficulty level indicators with Flutter's visual components. Create UI for saving recipe to Cookbook using Flutter's state management solution. Implement share functionality for recipes using Flutter's share package.",
+      "testStrategy": "Test recipe display with various recipe types and complexities using Flutter widget tests. Verify all recipe information is correctly displayed with integration tests. Test progress tracking through recipe steps with Flutter's testing framework. Ensure save and share functionality works as expected using Flutter driver tests.",
+      "subtasks": [
+        {
+          "id": "12.1",
+          "title": "Set up Flutter UI structure for recipe details",
+          "description": "Create the basic widget structure for the recipe detail screen",
+          "status": "pending"
+        },
+        {
+          "id": "12.2",
+          "title": "Implement recipe overview section",
+          "description": "Create a widget to display recipe title, image, time, and difficulty using Flutter's Card and Image widgets",
+          "status": "pending"
+        },
+        {
+          "id": "12.3",
+          "title": "Implement ingredients list",
+          "description": "Create a scrollable list of ingredients with quantities using Flutter's ListView",
+          "status": "pending"
+        },
+        {
+          "id": "12.4",
+          "title": "Implement tools list",
+          "description": "Create a visual list of required cooking tools using Flutter icons and widgets",
+          "status": "pending"
+        },
+        {
+          "id": "12.5",
+          "title": "Implement step-by-step instructions",
+          "description": "Create a StatefulWidget to display and track progress through recipe steps",
+          "status": "pending"
+        },
+        {
+          "id": "12.6",
+          "title": "Add save to cookbook functionality",
+          "description": "Implement UI and state management for saving recipes to the user's cookbook",
+          "status": "pending"
+        },
+        {
+          "id": "12.7",
+          "title": "Add recipe sharing functionality",
+          "description": "Integrate Flutter's share package to allow sharing recipes",
+          "status": "pending"
+        },
+        {
+          "id": "12.8",
+          "title": "Write widget tests",
+          "description": "Create comprehensive widget tests for the recipe display UI components",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 13,
       "title": "Cookbook Implementation",
       "description": "Create the personal cookbook feature for saving and organizing favorite recipes",
-      "details": "Design Cookbook screen with saved recipe display. Implement recipe saving functionality with local storage and Supabase sync. Create categorization system for organizing recipes. Implement search and filter functionality within Cookbook. Add recipe editing and notes feature. Create UI for viewing recipe history and favorites. Implement offline access to saved recipes.",
-      "testStrategy": "Test saving recipes to Cookbook from various app locations. Verify recipes are available offline. Test categorization and organization features. Ensure sync works correctly when returning online after offline changes.",
-      "priority": "medium",
+      "status": "pending",
       "dependencies": [
         2,
         12
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "medium",
+      "details": "Design Cookbook screen with saved recipe display using Flutter widgets. Implement recipe saving functionality with local storage (shared_preferences or Hive) and Supabase sync. Create categorization system for organizing recipes. Implement search and filter functionality within Cookbook using Flutter's search delegates. Add recipe editing and notes feature with Flutter forms. Create UI for viewing recipe history and favorites using Flutter's Material or Cupertino design components. Implement offline access to saved recipes using local database solutions like Hive or SQLite.",
+      "testStrategy": "Test saving recipes to Cookbook from various app locations using Flutter widget tests and integration tests. Verify recipes are available offline with Flutter Driver tests. Test categorization and organization features. Ensure sync works correctly when returning online after offline changes using mocked Supabase responses.",
+      "subtasks": [
+        {
+          "id": "13.1",
+          "title": "Design Cookbook UI in Flutter",
+          "description": "Create the UI layout for the cookbook screen using Flutter widgets",
+          "status": "pending"
+        },
+        {
+          "id": "13.2",
+          "title": "Implement Local Storage with Hive",
+          "description": "Set up Hive database for local recipe storage and implement CRUD operations",
+          "status": "pending"
+        },
+        {
+          "id": "13.3",
+          "title": "Implement Supabase Sync",
+          "description": "Create services to sync local recipe data with Supabase backend",
+          "status": "pending"
+        },
+        {
+          "id": "13.4",
+          "title": "Create Recipe Categorization System",
+          "description": "Implement tagging and categorization features for recipes using Flutter state management",
+          "status": "pending"
+        },
+        {
+          "id": "13.5",
+          "title": "Implement Search and Filter",
+          "description": "Create search delegate and filter widgets for finding recipes in the cookbook",
+          "status": "pending"
+        },
+        {
+          "id": "13.6",
+          "title": "Add Recipe Editing Features",
+          "description": "Implement forms and UI for editing saved recipes and adding notes",
+          "status": "pending"
+        },
+        {
+          "id": "13.7",
+          "title": "Create Recipe History View",
+          "description": "Implement UI for viewing recipe history and favorites using Flutter lists",
+          "status": "pending"
+        },
+        {
+          "id": "13.8",
+          "title": "Implement Offline Access",
+          "description": "Ensure recipes are available offline through local database caching",
+          "status": "pending"
+        },
+        {
+          "id": "13.9",
+          "title": "Write Widget and Integration Tests",
+          "description": "Create comprehensive test suite for cookbook functionality",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 14,
       "title": "Audio Instruction System",
       "description": "Implement audio playback for recipe instructions and assistant responses",
-      "details": "Research and integrate text-to-speech library for React Native. Create audio service for converting text instructions to speech. Implement playback controls (play, pause, repeat). Add voice speed adjustment feature. Create audio queue for sequential instruction playback. Implement background audio capability for continued playback when app is minimized. Add error handling for audio playback failures.",
-      "testStrategy": "Test audio playback of various instruction types. Verify playback controls work correctly. Test background audio functionality. Ensure proper error handling for playback failures.",
-      "priority": "medium",
+      "status": "pending",
       "dependencies": [
         8,
         12
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "medium",
+      "details": "Research and integrate text-to-speech library for Flutter. Create audio service for converting text instructions to speech. Implement playback controls (play, pause, repeat). Add voice speed adjustment feature. Create audio queue for sequential instruction playback. Implement background audio capability for continued playback when app is minimized. Add error handling for audio playback failures.",
+      "testStrategy": "Test audio playback of various instruction types. Verify playback controls work correctly. Test background audio functionality. Ensure proper error handling for playback failures. Use Flutter's testing framework for unit and widget tests.",
+      "subtasks": [
+        {
+          "id": "14.1",
+          "title": "Research Flutter TTS packages",
+          "description": "Evaluate Flutter text-to-speech packages like flutter_tts, just_audio, and others for compatibility and features",
+          "status": "pending"
+        },
+        {
+          "id": "14.2",
+          "title": "Create AudioService class",
+          "description": "Implement a Dart service class that handles text-to-speech conversion and audio playback",
+          "status": "pending"
+        },
+        {
+          "id": "14.3",
+          "title": "Implement playback controls",
+          "description": "Create Flutter widgets for play, pause, and repeat functionality",
+          "status": "pending"
+        },
+        {
+          "id": "14.4",
+          "title": "Add speed adjustment",
+          "description": "Implement speech rate controls using Flutter sliders or buttons",
+          "status": "pending"
+        },
+        {
+          "id": "14.5",
+          "title": "Create audio queue system",
+          "description": "Develop a queue system in Dart for sequential instruction playback",
+          "status": "pending"
+        },
+        {
+          "id": "14.6",
+          "title": "Implement background audio",
+          "description": "Research and implement Flutter background audio capabilities using plugins like audio_service",
+          "status": "pending"
+        },
+        {
+          "id": "14.7",
+          "title": "Add error handling",
+          "description": "Implement robust error handling for audio playback failures in Flutter",
+          "status": "pending"
+        },
+        {
+          "id": "14.8",
+          "title": "Write tests",
+          "description": "Create unit and widget tests for audio functionality using Flutter's test framework",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 15,
       "title": "Voice Q&A Functionality",
       "description": "Implement voice-based question and answer functionality during cooking",
-      "details": "Extend voice recognition system to handle cooking-related questions. Create context-aware Q&A system using LLM. Implement common question handling for faster responses (\"What's next?\", \"Repeat that\"). Create audio response generation for answers. Implement context tracking to maintain conversation state. Add error recovery for misunderstood questions.",
-      "testStrategy": "Test Q&A with various cooking-related questions. Verify context-awareness with follow-up questions. Test common question handling for response speed. Ensure proper error recovery for misunderstood questions.",
-      "priority": "medium",
+      "status": "pending",
       "dependencies": [
         9,
         14
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "medium",
+      "details": "Extend voice recognition system to handle cooking-related questions in the Flutter app. Create context-aware Q&A system using LLM. Implement common question handling for faster responses (\"What's next?\", \"Repeat that\"). Create audio response generation for answers. Implement context tracking to maintain conversation state. Add error recovery for misunderstood questions. Use Flutter's sound packages and state management solutions for implementation.",
+      "testStrategy": "Test Q&A with various cooking-related questions. Verify context-awareness with follow-up questions. Test common question handling for response speed. Ensure proper error recovery for misunderstood questions. Use Flutter's testing framework for unit and widget tests. Implement integration tests using Flutter Driver.",
+      "subtasks": [
+        {
+          "id": "15.1",
+          "title": "Set up voice recognition in Flutter",
+          "description": "Integrate speech_to_text or similar Flutter package for voice recognition",
+          "status": "pending"
+        },
+        {
+          "id": "15.2",
+          "title": "Implement LLM integration for Q&A",
+          "description": "Connect to LLM API using Dart HTTP client and implement context-aware Q&A system",
+          "status": "pending"
+        },
+        {
+          "id": "15.3",
+          "title": "Create common question handler",
+          "description": "Implement efficient handling for frequent questions using local processing in Dart",
+          "status": "pending"
+        },
+        {
+          "id": "15.4",
+          "title": "Implement text-to-speech for answers",
+          "description": "Use flutter_tts or similar package to convert text answers to speech",
+          "status": "pending"
+        },
+        {
+          "id": "15.5",
+          "title": "Develop conversation state management",
+          "description": "Use Provider, Riverpod, or Bloc pattern to track conversation context in the Flutter app",
+          "status": "pending"
+        },
+        {
+          "id": "15.6",
+          "title": "Add error handling for voice recognition",
+          "description": "Implement graceful error recovery for misunderstood questions with Flutter error handling",
+          "status": "pending"
+        },
+        {
+          "id": "15.7",
+          "title": "Create UI components for voice interaction",
+          "description": "Design and implement Flutter widgets for voice interaction feedback and status",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 16,
       "title": "Home Screen Implementation",
       "description": "Create the main home screen with welcome message, quick access to assistant, and suggested recipes",
-      "details": "Design home screen layout with welcome message and user stats. Implement quick access button for 'Hey Chef' assistant. Create suggested recipe carousel based on user preferences. Add recently viewed recipes section. Implement personalized content based on user level and history. Create quick search or filter functionality. Add pull-to-refresh for content updates.",
-      "testStrategy": "Test home screen display with various user profiles. Verify suggested recipes match user preferences. Test assistant quick access functionality. Ensure content refreshes correctly with pull-to-refresh.",
-      "priority": "high",
+      "status": "pending",
       "dependencies": [
         4,
         10,
         12
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "high",
+      "details": "Design home screen layout with welcome message and user stats using Flutter widgets. Implement quick access button for 'Hey Chef' assistant. Create suggested recipe carousel based on user preferences using Flutter's PageView or ListView.builder. Add recently viewed recipes section with custom cards. Implement personalized content based on user level and history. Create quick search or filter functionality using Flutter's search delegate. Add pull-to-refresh for content updates using RefreshIndicator widget.",
+      "testStrategy": "Test home screen display with various user profiles using Flutter widget tests. Verify suggested recipes match user preferences. Test assistant quick access functionality with integration tests. Ensure content refreshes correctly with pull-to-refresh using Flutter's test framework.",
+      "subtasks": [
+        {
+          "id": "16.1",
+          "title": "Set up home screen StatefulWidget",
+          "status": "pending",
+          "description": "Create a new StatefulWidget for the home screen with proper state management"
+        },
+        {
+          "id": "16.2",
+          "title": "Implement welcome message section",
+          "status": "pending",
+          "description": "Create a custom widget for displaying personalized welcome message and user stats"
+        },
+        {
+          "id": "16.3",
+          "title": "Build 'Hey Chef' assistant quick access",
+          "status": "pending",
+          "description": "Implement a floating action button or prominent button for quick access to the assistant"
+        },
+        {
+          "id": "16.4",
+          "title": "Create recipe carousel",
+          "status": "pending",
+          "description": "Build a horizontal scrolling carousel using PageView or ListView.builder for suggested recipes"
+        },
+        {
+          "id": "16.5",
+          "title": "Implement recently viewed section",
+          "status": "pending",
+          "description": "Create a section showing recently viewed recipes with custom card widgets"
+        },
+        {
+          "id": "16.6",
+          "title": "Add pull-to-refresh functionality",
+          "status": "pending",
+          "description": "Implement RefreshIndicator for content updates with proper state management"
+        },
+        {
+          "id": "16.7",
+          "title": "Create search functionality",
+          "status": "pending",
+          "description": "Implement search using Flutter's SearchDelegate or custom search widget"
+        },
+        {
+          "id": "16.8",
+          "title": "Write widget tests",
+          "status": "pending",
+          "description": "Create widget tests for home screen components using Flutter's test framework"
+        }
+      ]
     },
     {
       "id": 17,
       "title": "Search Screen Implementation",
       "description": "Create the search screen for manually browsing or filtering recipes",
-      "details": "Design search screen with search bar and filter options. Implement text-based recipe search functionality. Create advanced filtering by ingredient, tool, dietary need, difficulty, and time. Implement search history tracking. Add popular searches or trending recipes section. Create UI for displaying search results in list and grid views. Implement infinite scrolling for large result sets.",
-      "testStrategy": "Test search with various queries and filter combinations. Verify search results match query and filter criteria. Test search history functionality. Ensure infinite scrolling works correctly with large result sets.",
-      "priority": "medium",
+      "status": "pending",
       "dependencies": [
         11,
         12
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "medium",
+      "details": "Design search screen with search bar and filter options using Flutter widgets. Implement text-based recipe search functionality with Dart. Create advanced filtering by ingredient, tool, dietary need, difficulty, and time using Flutter's filtering components. Implement search history tracking with shared preferences or local database. Add popular searches or trending recipes section. Create UI for displaying search results in list and grid views using ListView.builder and GridView.builder. Implement infinite scrolling for large result sets using ScrollController or packages like infinite_scroll_pagination.",
+      "testStrategy": "Test search with various queries and filter combinations using Flutter widget tests and integration tests. Verify search results match query and filter criteria. Test search history functionality with unit tests. Ensure infinite scrolling works correctly with large result sets using Flutter Driver tests.",
+      "subtasks": [
+        {
+          "id": "17.1",
+          "title": "Create search screen UI with Flutter widgets",
+          "status": "pending",
+          "details": "Implement the search screen layout using Flutter widgets like TextField for search input, DropdownButton for filters, and TabBar for switching between list and grid views."
+        },
+        {
+          "id": "17.2",
+          "title": "Implement search functionality with Dart",
+          "status": "pending",
+          "details": "Create search logic in Dart to filter recipes based on text input, using state management solution (Provider, Bloc, or Riverpod)."
+        },
+        {
+          "id": "17.3",
+          "title": "Build advanced filtering options",
+          "status": "pending",
+          "details": "Implement filtering by ingredient, tool, dietary need, difficulty, and time using Flutter's ExpansionPanel or custom filter widgets."
+        },
+        {
+          "id": "17.4",
+          "title": "Implement search history with local storage",
+          "status": "pending",
+          "details": "Store and retrieve search history using shared_preferences or sqflite package."
+        },
+        {
+          "id": "17.5",
+          "title": "Create trending recipes section",
+          "status": "pending",
+          "details": "Display popular searches or trending recipes in a horizontal ListView with recipe cards."
+        },
+        {
+          "id": "17.6",
+          "title": "Implement list and grid view toggle",
+          "status": "pending",
+          "details": "Create UI for displaying search results in both list (ListView.builder) and grid (GridView.builder) formats with a toggle button."
+        },
+        {
+          "id": "17.7",
+          "title": "Add infinite scrolling for search results",
+          "status": "pending",
+          "details": "Implement pagination for search results using ScrollController listeners or the infinite_scroll_pagination package."
+        },
+        {
+          "id": "17.8",
+          "title": "Write widget and integration tests",
+          "status": "pending",
+          "details": "Create Flutter widget tests and integration tests to verify search functionality, filtering, and UI components."
+        }
+      ]
     },
     {
       "id": 18,
       "title": "Offline Mode Implementation",
       "description": "Implement offline access to profile and saved recipes",
-      "details": "Create offline storage service using AsyncStorage or similar. Implement data synchronization between local storage and Supabase. Create offline indicator UI. Implement conflict resolution for changes made offline. Add background sync when connection is restored. Create offline mode for essential app functions. Implement storage management to prevent excessive local data.",
-      "testStrategy": "Test app functionality in airplane mode. Verify saved recipes and profile are accessible offline. Test synchronization when connection is restored. Ensure conflict resolution works correctly for offline changes.",
-      "priority": "medium",
+      "status": "pending",
       "dependencies": [
         7,
         13
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "medium",
+      "details": "Create offline storage service using shared_preferences, hive, or sqflite. Implement data synchronization between local storage and Supabase. Create offline indicator UI using Flutter widgets. Implement conflict resolution for changes made offline. Add background sync when connection is restored using Flutter connectivity packages. Create offline mode for essential app functions. Implement storage management to prevent excessive local data.",
+      "testStrategy": "Test app functionality in airplane mode. Verify saved recipes and profile are accessible offline. Test synchronization when connection is restored. Ensure conflict resolution works correctly for offline changes. Use Flutter integration tests to verify offline functionality.",
+      "subtasks": [
+        {
+          "id": "18.1",
+          "title": "Implement local storage service",
+          "description": "Create a storage service using Flutter packages like shared_preferences, hive, or sqflite for offline data persistence",
+          "status": "pending"
+        },
+        {
+          "id": "18.2",
+          "title": "Create connectivity service",
+          "description": "Implement a service to detect network status changes using connectivity_plus or similar Flutter package",
+          "status": "pending"
+        },
+        {
+          "id": "18.3",
+          "title": "Implement data synchronization",
+          "description": "Create logic to sync local data with Supabase when connection is available",
+          "status": "pending"
+        },
+        {
+          "id": "18.4",
+          "title": "Build offline indicator UI",
+          "description": "Create a Flutter widget to indicate offline status in the app",
+          "status": "pending"
+        },
+        {
+          "id": "18.5",
+          "title": "Implement conflict resolution",
+          "description": "Create logic to handle conflicts between local and server data",
+          "status": "pending"
+        },
+        {
+          "id": "18.6",
+          "title": "Add background sync functionality",
+          "description": "Implement background sync using Flutter workmanager or similar package",
+          "status": "pending"
+        },
+        {
+          "id": "18.7",
+          "title": "Create storage management",
+          "description": "Implement logic to manage local storage size and prevent excessive data storage",
+          "status": "pending"
+        },
+        {
+          "id": "18.8",
+          "title": "Write integration tests",
+          "description": "Create Flutter integration tests to verify offline functionality",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 19,
       "title": "Theme System Implementation",
       "description": "Implement light and dark mode with user preference toggle",
-      "details": "Extend global theme provider to support theme switching. Create theme toggle in user settings. Implement system theme detection and automatic switching. Ensure all UI components adapt to theme changes. Add theme persistence in local storage. Create smooth transition animation between themes. Test all screens and components in both themes.",
-      "testStrategy": "Test theme switching across all app screens. Verify all components correctly adapt to theme changes. Test system theme detection and automatic switching. Ensure theme preference is persisted between app launches.",
-      "priority": "low",
+      "status": "pending",
       "dependencies": [
         3
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "low",
+      "details": "Extend ThemeData provider to support theme switching in Flutter. Create theme toggle in user settings. Implement system theme detection and automatic switching using Flutter's WidgetsBinding. Ensure all UI widgets adapt to theme changes. Add theme persistence in shared_preferences. Create smooth transition animation between themes using AnimatedTheme. Test all screens and widgets in both themes.",
+      "testStrategy": "Test theme switching across all app screens. Verify all widgets correctly adapt to theme changes. Test system theme detection and automatic switching. Ensure theme preference is persisted between app launches. Write widget tests to verify theme-dependent UI elements render correctly.",
+      "subtasks": [
+        {
+          "id": "19.1",
+          "title": "Create theme data definitions",
+          "description": "Define light and dark ThemeData objects with appropriate color schemes, text styles, and widget themes",
+          "status": "pending"
+        },
+        {
+          "id": "19.2",
+          "title": "Implement ThemeProvider using Provider or Riverpod",
+          "description": "Create a theme provider that manages theme state and provides it to the widget tree",
+          "status": "pending"
+        },
+        {
+          "id": "19.3",
+          "title": "Add system theme detection",
+          "description": "Use MediaQuery.platformBrightnessOf(context) to detect system theme and apply it automatically",
+          "status": "pending"
+        },
+        {
+          "id": "19.4",
+          "title": "Create theme toggle widget",
+          "description": "Implement a toggle switch in settings to change between light, dark, and system themes",
+          "status": "pending"
+        },
+        {
+          "id": "19.5",
+          "title": "Add theme persistence",
+          "description": "Use shared_preferences package to save and restore theme preferences",
+          "status": "pending"
+        },
+        {
+          "id": "19.6",
+          "title": "Implement theme transition animation",
+          "description": "Use AnimatedTheme or AnimatedBuilder to create smooth transitions between themes",
+          "status": "pending"
+        },
+        {
+          "id": "19.7",
+          "title": "Test theme implementation",
+          "description": "Write widget tests to verify theme changes are correctly applied to all UI components",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 20,
       "title": "Recipe Difficulty Classification",
       "description": "Implement recipe categorization by difficulty level (easy, medium, hard)",
-      "details": "Create algorithm for classifying recipe difficulty based on ingredients, steps, techniques, and time. Implement visual indicators for difficulty levels. Create filtering system based on difficulty. Connect difficulty level to user experience level for recommendations. Implement difficulty-based sorting in search results. Add explanation for difficulty classification when requested.",
-      "testStrategy": "Test difficulty classification with various recipe types. Verify difficulty filtering works correctly. Test recommendation system based on user experience and recipe difficulty. Ensure difficulty indicators are clearly visible in recipe displays.",
-      "priority": "medium",
+      "status": "pending",
       "dependencies": [
         11
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "medium",
+      "details": "Create algorithm for classifying recipe difficulty based on ingredients, steps, techniques, and time. Implement visual indicators for difficulty levels using Flutter widgets. Create filtering system based on difficulty with Flutter's state management. Connect difficulty level to user experience level for recommendations. Implement difficulty-based sorting in search results. Add explanation for difficulty classification when requested. Use Dart for all algorithm implementations.",
+      "testStrategy": "Test difficulty classification with various recipe types using Flutter test framework. Verify difficulty filtering works correctly in the Flutter app. Test recommendation system based on user experience and recipe difficulty. Ensure difficulty indicators are clearly visible in Flutter UI components. Use widget testing for UI elements and unit testing for classification algorithms.",
+      "subtasks": [
+        {
+          "id": "20.1",
+          "title": "Implement difficulty classification algorithm in Dart",
+          "status": "pending"
+        },
+        {
+          "id": "20.2",
+          "title": "Create Flutter widgets for difficulty level indicators",
+          "status": "pending"
+        },
+        {
+          "id": "20.3",
+          "title": "Implement difficulty filtering using Flutter state management",
+          "status": "pending"
+        },
+        {
+          "id": "20.4",
+          "title": "Connect user experience to recipe difficulty for recommendations",
+          "status": "pending"
+        },
+        {
+          "id": "20.5",
+          "title": "Add difficulty-based sorting to search results",
+          "status": "pending"
+        },
+        {
+          "id": "20.6",
+          "title": "Implement UI for difficulty explanation tooltips",
+          "status": "pending"
+        },
+        {
+          "id": "20.7",
+          "title": "Write unit tests for difficulty classification algorithm",
+          "status": "pending"
+        },
+        {
+          "id": "20.8",
+          "title": "Write widget tests for difficulty UI components",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 21,
       "title": "User Experience Level Tracking",
       "description": "Implement system to track and display user cooking experience level",
-      "details": "Create experience tracking system with points for completed recipes. Implement level progression (beginner, intermediate, advanced) based on points. Create UI for displaying current level and progress. Implement milestone celebrations for level-ups. Add experience history tracking. Connect experience level to recipe recommendations and difficulty access. Store experience data in Supabase with local caching.",
-      "testStrategy": "Test experience point accumulation with recipe completions. Verify level progression works correctly. Test UI display of experience level and progress. Ensure milestone celebrations trigger appropriately.",
-      "priority": "low",
+      "status": "pending",
       "dependencies": [
         7,
         20
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "low",
+      "details": "Create experience tracking system with points for completed recipes. Implement level progression (beginner, intermediate, advanced) based on points. Create Flutter UI for displaying current level and progress. Implement milestone celebrations for level-ups. Add experience history tracking. Connect experience level to recipe recommendations and difficulty access. Store experience data in Supabase with local caching using Flutter's shared_preferences or hive packages.",
+      "testStrategy": "Test experience point accumulation with recipe completions using Flutter integration tests. Verify level progression works correctly. Test UI display of experience level and progress with Flutter widget tests. Ensure milestone celebrations trigger appropriately. Use Flutter's test package for unit testing business logic.",
+      "subtasks": [
+        {
+          "id": "21.1",
+          "title": "Create Supabase data model for experience tracking",
+          "status": "pending",
+          "details": "Design and implement Supabase tables for storing user experience points, levels, and history. Use Dart models to represent these entities in the app."
+        },
+        {
+          "id": "21.2",
+          "title": "Implement experience point calculation logic",
+          "status": "pending",
+          "details": "Create Dart service class to calculate and award experience points for recipe completions based on difficulty and other factors."
+        },
+        {
+          "id": "21.3",
+          "title": "Develop level progression system",
+          "status": "pending",
+          "details": "Implement logic to determine user level (beginner, intermediate, advanced) based on accumulated points. Create thresholds for level advancement."
+        },
+        {
+          "id": "21.4",
+          "title": "Build Flutter UI components for experience display",
+          "status": "pending",
+          "details": "Create custom Flutter widgets for displaying current level, progress bar to next level, and experience history. Use Flutter's animation capabilities for engaging visual feedback."
+        },
+        {
+          "id": "21.5",
+          "title": "Implement milestone celebrations",
+          "status": "pending",
+          "details": "Create animated Flutter overlays or modals that trigger when users level up. Use Flutter's animation framework for confetti effects or other celebratory visuals."
+        },
+        {
+          "id": "21.6",
+          "title": "Integrate local caching with Supabase",
+          "status": "pending",
+          "details": "Use shared_preferences or hive package to cache experience data locally. Implement synchronization logic between local cache and Supabase backend."
+        },
+        {
+          "id": "21.7",
+          "title": "Connect experience level to recipe recommendations",
+          "status": "pending",
+          "details": "Modify recipe recommendation algorithm to factor in user experience level. Implement provider or bloc pattern for state management of this feature."
+        },
+        {
+          "id": "21.8",
+          "title": "Write Flutter tests for experience system",
+          "status": "pending",
+          "details": "Create unit tests for experience calculation logic, widget tests for UI components, and integration tests for the full experience tracking flow using Flutter's test framework."
+        }
+      ]
     },
     {
       "id": 22,
       "title": "Error Handling and Feedback System",
-      "description": "Implement comprehensive error handling and user feedback throughout the app",
-      "details": "Create global error handling service. Implement user-friendly error messages for common failures. Create toast or notification system for feedback. Implement offline error handling with retry options. Add error logging for debugging. Create feedback collection for user-reported issues. Implement graceful degradation for feature unavailability.",
-      "testStrategy": "Test error handling with simulated failures in various app functions. Verify user-friendly messages are displayed appropriately. Test offline error handling and retry functionality. Ensure error logging works correctly for debugging purposes.",
-      "priority": "medium",
+      "description": "Implement comprehensive error handling and user feedback throughout the Flutter app",
+      "status": "pending",
       "dependencies": [
         5,
         8,
         11,
         14
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "medium",
+      "details": "Create global error handling service using Flutter's error handling mechanisms. Implement user-friendly error messages for common failures. Create a toast or snackbar notification system for feedback using Flutter's material components. Implement offline error handling with retry options using connectivity packages. Add error logging for debugging with packages like logger or sentry. Create feedback collection for user-reported issues. Implement graceful degradation for feature unavailability.",
+      "testStrategy": "Test error handling with simulated failures in various app functions using Flutter's testing framework. Verify user-friendly messages are displayed appropriately with widget tests. Test offline error handling and retry functionality with integration tests. Ensure error logging works correctly for debugging purposes.",
+      "subtasks": [
+        {
+          "id": "22.1",
+          "title": "Create global error handling service",
+          "description": "Implement a centralized error handling service using Flutter's error zones and runZonedGuarded",
+          "status": "pending"
+        },
+        {
+          "id": "22.2",
+          "title": "Implement SnackBar notification system",
+          "description": "Create a reusable SnackBar component for displaying user feedback and error messages using Flutter's material components",
+          "status": "pending"
+        },
+        {
+          "id": "22.3",
+          "title": "Implement offline detection and handling",
+          "description": "Use connectivity_plus package to detect network status and implement appropriate error handling for offline scenarios",
+          "status": "pending"
+        },
+        {
+          "id": "22.4",
+          "title": "Set up error logging",
+          "description": "Integrate a logging solution like logger package or Sentry.io for Flutter to track and monitor errors",
+          "status": "pending"
+        },
+        {
+          "id": "22.5",
+          "title": "Create user feedback collection mechanism",
+          "description": "Implement a form or dialog for users to report issues, with screenshot capability using Flutter's screenshot package",
+          "status": "pending"
+        },
+        {
+          "id": "22.6",
+          "title": "Write unit and widget tests for error handling",
+          "description": "Create comprehensive tests using Flutter's test framework to verify error handling works as expected",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 23,
       "title": "Performance Optimization",
       "description": "Optimize app performance for smooth user experience across devices",
-      "details": "Implement lazy loading for images and heavy content. Create virtualized lists for large data sets. Optimize API calls with caching and batching. Implement memory management for media resources. Add performance monitoring for key user interactions. Optimize animations and transitions. Implement code splitting for faster initial load.",
-      "testStrategy": "Measure and compare performance metrics before and after optimization. Test app on low-end devices to ensure acceptable performance. Monitor memory usage during extended app usage. Verify smooth scrolling and transitions in all lists and screens.",
-      "priority": "medium",
+      "status": "pending",
       "dependencies": [
         16,
         17,
         18
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "medium",
+      "details": "Implement lazy loading for images and heavy content using Flutter's lazy loading mechanisms. Create efficient lists with ListView.builder or CustomScrollView for large data sets. Optimize API calls with caching and batching using packages like dio and hive. Implement memory management for media resources with proper disposal of controllers and streams. Add performance monitoring for key user interactions using DevTools and custom performance overlays. Optimize animations and transitions with Flutter's built-in animation system. Implement deferred components for faster initial load.",
+      "testStrategy": "Measure and compare performance metrics before and after optimization using Flutter DevTools. Test app on low-end devices to ensure acceptable performance. Monitor memory usage during extended app usage with Flutter's memory profiler. Verify smooth scrolling and transitions in all lists and screens using Flutter Performance overlay.",
+      "subtasks": [
+        {
+          "id": "23.1",
+          "title": "Implement image lazy loading",
+          "description": "Use Flutter's cached_network_image package for efficient image loading and caching",
+          "status": "pending"
+        },
+        {
+          "id": "23.2",
+          "title": "Optimize list rendering",
+          "description": "Implement ListView.builder, GridView.builder or CustomScrollView for efficient rendering of large data sets",
+          "status": "pending"
+        },
+        {
+          "id": "23.3",
+          "title": "Implement API response caching",
+          "description": "Use Hive or shared_preferences to cache API responses and reduce network calls",
+          "status": "pending"
+        },
+        {
+          "id": "23.4",
+          "title": "Set up memory management",
+          "description": "Implement proper disposal of controllers, streams, and animations to prevent memory leaks",
+          "status": "pending"
+        },
+        {
+          "id": "23.5",
+          "title": "Add performance monitoring",
+          "description": "Integrate Flutter DevTools and custom performance overlays to monitor app performance",
+          "status": "pending"
+        },
+        {
+          "id": "23.6",
+          "title": "Optimize animations",
+          "description": "Use Flutter's built-in animation system efficiently and implement Hero animations for transitions",
+          "status": "pending"
+        },
+        {
+          "id": "23.7",
+          "title": "Implement deferred components",
+          "description": "Use Flutter's deferred components feature to split the app and reduce initial load time",
+          "status": "pending"
+        },
+        {
+          "id": "23.8",
+          "title": "Reduce app size",
+          "description": "Optimize asset sizes and implement proper asset variants for different screen densities",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 24,
       "title": "App Packaging and Deployment Preparation",
-      "description": "Prepare the app for deployment to App Store and Google Play",
-      "details": "Configure app icons and splash screens for all platforms. Create app store listings and screenshots. Implement versioning system for updates. Configure build scripts for production releases. Create privacy policy and terms of service. Implement app signing for both platforms. Prepare marketing materials for launch.",
-      "testStrategy": "Verify app builds successfully for production. Test installation from generated packages. Ensure correct display of icons and splash screens. Verify app store metadata is complete and accurate.",
-      "priority": "low",
+      "description": "Prepare the Flutter app for deployment to App Store and Google Play",
+      "status": "pending",
       "dependencies": [
         1,
         2,
@@ -388,16 +1456,73 @@
         22,
         23
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "low",
+      "details": "Configure app icons and splash screens for all platforms using Flutter's asset system. Create app store listings and screenshots. Implement versioning system for updates in pubspec.yaml. Configure build scripts for production releases using Flutter commands. Create privacy policy and terms of service. Implement app signing for both platforms (iOS and Android). Prepare marketing materials for launch.",
+      "testStrategy": "Verify Flutter app builds successfully for production using 'flutter build apk' and 'flutter build ios'. Test installation from generated packages. Ensure correct display of icons and splash screens on various devices. Verify app store metadata is complete and accurate.",
+      "subtasks": [
+        {
+          "id": "24.1",
+          "title": "Configure Flutter app icons",
+          "description": "Set up app icons for both iOS and Android platforms",
+          "details": "Use the flutter_launcher_icons package to generate appropriate icons for all required sizes. Configure in pubspec.yaml and run the icon generation command.",
+          "status": "pending"
+        },
+        {
+          "id": "24.2",
+          "title": "Set up splash screens",
+          "description": "Configure splash screens for Flutter app on both platforms",
+          "details": "Use flutter_native_splash package to create and configure splash screens. Define colors, images and behavior in pubspec.yaml.",
+          "status": "pending"
+        },
+        {
+          "id": "24.3",
+          "title": "Configure versioning",
+          "description": "Set up proper versioning in pubspec.yaml",
+          "details": "Implement semantic versioning in pubspec.yaml. Ensure version and build number are properly configured for both platforms.",
+          "status": "pending"
+        },
+        {
+          "id": "24.4",
+          "title": "Set up Android signing",
+          "description": "Configure keystore and signing for Android release builds",
+          "details": "Generate keystore file, configure key.properties, and update android/app/build.gradle for release signing.",
+          "status": "pending"
+        },
+        {
+          "id": "24.5",
+          "title": "Set up iOS signing",
+          "description": "Configure certificates and provisioning profiles for iOS",
+          "details": "Set up Apple Developer account, create app ID, generate certificates, and configure provisioning profiles in Xcode.",
+          "status": "pending"
+        },
+        {
+          "id": "24.6",
+          "title": "Create app store listings",
+          "description": "Prepare metadata for App Store and Google Play",
+          "details": "Create compelling descriptions, keywords, and categorization for both stores. Prepare privacy policy and terms of service documents.",
+          "status": "pending"
+        },
+        {
+          "id": "24.7",
+          "title": "Generate screenshots",
+          "description": "Create screenshots for all required device sizes",
+          "details": "Use Flutter's integration testing or screenshot tools to generate consistent screenshots across all required device sizes for both platforms.",
+          "status": "pending"
+        },
+        {
+          "id": "24.8",
+          "title": "Configure CI/CD for Flutter builds",
+          "description": "Set up automated build pipeline for Flutter app",
+          "details": "Configure CI/CD pipeline (using GitHub Actions, Codemagic, or similar) to automate the build and release process for both platforms.",
+          "status": "pending"
+        }
+      ]
     },
     {
       "id": 25,
       "title": "Testing and Quality Assurance",
-      "description": "Implement comprehensive testing strategy across all app features",
-      "details": "Create unit tests for core functionality. Implement integration tests for key user flows. Set up end-to-end testing with Detox or similar. Create manual test plan for all features. Implement UI testing for critical screens. Set up continuous integration for automated testing. Create test documentation and reporting.",
-      "testStrategy": "Run all automated tests before each release. Conduct manual testing according to test plan. Verify all critical user flows work correctly. Test on multiple device types and OS versions. Document and track all discovered issues.",
-      "priority": "high",
+      "description": "Implement comprehensive testing strategy across all Flutter app features",
+      "status": "pending",
       "dependencies": [
         1,
         2,
@@ -411,8 +1536,65 @@
         17,
         18
       ],
-      "status": "pending",
-      "subtasks": []
+      "priority": "high",
+      "details": "Create unit tests for core functionality using Flutter's test package. Implement widget tests for UI components and integration tests for key user flows. Set up end-to-end testing with Flutter integration_test package or similar. Create manual test plan for all features. Implement golden tests for critical screens. Set up continuous integration for automated testing with Flutter-compatible CI tools. Create test documentation and reporting.",
+      "testStrategy": "Run all automated tests before each release. Conduct manual testing according to test plan. Verify all critical user flows work correctly. Test on multiple device types (iOS, Android) and OS versions. Document and track all discovered issues using Flutter-specific testing tools and methodologies.",
+      "subtasks": [
+        {
+          "id": "25.1",
+          "title": "Set up Flutter test environment",
+          "description": "Configure the project for unit, widget, and integration testing",
+          "status": "pending"
+        },
+        {
+          "id": "25.2",
+          "title": "Create unit tests for core functionality",
+          "description": "Write tests for business logic, state management, and utility functions using Flutter's test package",
+          "status": "pending"
+        },
+        {
+          "id": "25.3",
+          "title": "Implement widget tests",
+          "description": "Create tests for UI components using Flutter's widget testing framework",
+          "status": "pending"
+        },
+        {
+          "id": "25.4",
+          "title": "Set up integration tests",
+          "description": "Configure and implement integration tests using Flutter's integration_test package",
+          "status": "pending"
+        },
+        {
+          "id": "25.5",
+          "title": "Implement golden tests",
+          "description": "Set up golden tests for critical UI components to ensure visual consistency",
+          "status": "pending"
+        },
+        {
+          "id": "25.6",
+          "title": "Create manual test plan",
+          "description": "Develop comprehensive manual testing procedures for features that require human verification",
+          "status": "pending"
+        },
+        {
+          "id": "25.7",
+          "title": "Configure CI pipeline for testing",
+          "description": "Set up continuous integration to automatically run tests on code changes using Flutter-compatible CI tools",
+          "status": "pending"
+        },
+        {
+          "id": "25.8",
+          "title": "Test on multiple devices",
+          "description": "Verify app functionality across various iOS and Android devices and OS versions",
+          "status": "pending"
+        },
+        {
+          "id": "25.9",
+          "title": "Create test documentation",
+          "description": "Document testing approach, test cases, and results for the Flutter application",
+          "status": "pending"
+        }
+      ]
     }
   ]
 }

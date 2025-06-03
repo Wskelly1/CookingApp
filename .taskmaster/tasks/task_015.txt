@@ -5,7 +5,51 @@
 # Priority: medium
 # Description: Implement voice-based question and answer functionality during cooking
 # Details:
-Extend voice recognition system to handle cooking-related questions. Create context-aware Q&A system using LLM. Implement common question handling for faster responses ("What's next?", "Repeat that"). Create audio response generation for answers. Implement context tracking to maintain conversation state. Add error recovery for misunderstood questions.
+Extend voice recognition system to handle cooking-related questions in the Flutter app. Create context-aware Q&A system using LLM. Implement common question handling for faster responses ("What's next?", "Repeat that"). Create audio response generation for answers. Implement context tracking to maintain conversation state. Add error recovery for misunderstood questions. Use Flutter's sound packages and state management solutions for implementation.
 
 # Test Strategy:
-Test Q&A with various cooking-related questions. Verify context-awareness with follow-up questions. Test common question handling for response speed. Ensure proper error recovery for misunderstood questions.
+Test Q&A with various cooking-related questions. Verify context-awareness with follow-up questions. Test common question handling for response speed. Ensure proper error recovery for misunderstood questions. Use Flutter's testing framework for unit and widget tests. Implement integration tests using Flutter Driver.
+
+# Subtasks:
+## 15.1. Set up voice recognition in Flutter [pending]
+### Dependencies: None
+### Description: Integrate speech_to_text or similar Flutter package for voice recognition
+### Details:
+
+
+## 15.2. Implement LLM integration for Q&A [pending]
+### Dependencies: None
+### Description: Connect to LLM API using Dart HTTP client and implement context-aware Q&A system
+### Details:
+
+
+## 15.3. Create common question handler [pending]
+### Dependencies: None
+### Description: Implement efficient handling for frequent questions using local processing in Dart
+### Details:
+
+
+## 15.4. Implement text-to-speech for answers [pending]
+### Dependencies: None
+### Description: Use flutter_tts or similar package to convert text answers to speech
+### Details:
+
+
+## 15.5. Develop conversation state management [pending]
+### Dependencies: None
+### Description: Use Provider, Riverpod, or Bloc pattern to track conversation context in the Flutter app
+### Details:
+
+
+## 15.6. Add error handling for voice recognition [pending]
+### Dependencies: None
+### Description: Implement graceful error recovery for misunderstood questions with Flutter error handling
+### Details:
+
+
+## 15.7. Create UI components for voice interaction [pending]
+### Dependencies: None
+### Description: Design and implement Flutter widgets for voice interaction feedback and status
+### Details:
+
+

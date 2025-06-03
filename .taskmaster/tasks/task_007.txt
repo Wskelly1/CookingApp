@@ -5,7 +5,57 @@
 # Priority: medium
 # Description: Implement user profile screen with ability to view and edit personal information and preferences
 # Details:
-Create profile screen with user information display. Implement edit functionality for all profile fields. Create UI for updating cooking experience, dietary restrictions, and food preferences. Implement profile picture upload and management. Add settings section for app preferences (notifications, theme). Connect profile updates to Supabase database. Implement local storage for offline profile access.
+Create profile screen with user information display using Flutter widgets. Implement edit functionality for all profile fields with Flutter form components. Create UI for updating cooking experience, dietary restrictions, and food preferences using Flutter's material design components. Implement profile picture upload and management using Flutter image picker and file handling. Add settings section for app preferences (notifications, theme) using Flutter's ThemeData and notification plugins. Connect profile updates to Supabase database using the supabase_flutter package. Implement local storage for offline profile access using shared_preferences or hive.
 
 # Test Strategy:
-Test viewing and editing all profile fields. Verify changes are persisted to the database. Test profile picture upload and display. Ensure profile data is available offline.
+Test viewing and editing all profile fields using Flutter widget tests and integration tests. Verify changes are persisted to the database using mock Supabase services. Test profile picture upload and display with Flutter's TestWidgets. Ensure profile data is available offline through local storage tests.
+
+# Subtasks:
+## 7.1. Create Flutter profile screen layout [pending]
+### Dependencies: None
+### Description: Design and implement the profile screen UI using Flutter widgets
+### Details:
+
+
+## 7.2. Implement profile editing with Flutter forms [pending]
+### Dependencies: None
+### Description: Create editable form fields for all user profile information using Flutter's form widgets and validation
+### Details:
+
+
+## 7.3. Implement profile picture management [pending]
+### Dependencies: None
+### Description: Add functionality to select, crop, and upload profile pictures using image_picker and image_cropper packages
+### Details:
+
+
+## 7.4. Create preferences UI components [pending]
+### Dependencies: None
+### Description: Implement UI for food preferences, dietary restrictions, and cooking experience using Flutter dropdown, checkbox, and slider widgets
+### Details:
+
+
+## 7.5. Implement settings section [pending]
+### Dependencies: None
+### Description: Create settings UI for app preferences using Flutter's Switch, Radio, and other input widgets
+### Details:
+
+
+## 7.6. Connect to Supabase with Flutter [pending]
+### Dependencies: None
+### Description: Implement Supabase integration using supabase_flutter package for profile data storage and retrieval
+### Details:
+
+
+## 7.7. Implement offline storage [pending]
+### Dependencies: None
+### Description: Add local storage functionality using shared_preferences or hive package for offline profile access
+### Details:
+
+
+## 7.8. Write Flutter widget and integration tests [pending]
+### Dependencies: None
+### Description: Create comprehensive tests for profile functionality using Flutter's testing framework
+### Details:
+
+
