@@ -1,0 +1,35 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+- **Error Handling Workflow**
+  - Whenever an error is encountered during development or automation:
+    - Check the `encountered_errors/` folder for a log file describing a similar error and the fix that worked previously.
+    - If a matching or similar error is found, attempt the documented fix before trying other solutions.
+    - If the error is new or the fix does not resolve the issue, research and attempt a new fix.
+    - After resolving the error (or attempting a fix), create or update a log file in `encountered_errors/` with:
+      - The error message and context
+      - The fix or attempted fix
+      - The date/time of occurrence
+      - Any additional notes or observations
+  - This process ensures that recurring errors are resolved more quickly and that the knowledge base of fixes grows over time.
+
+- **Example:**
+  - If an Android build fails with an ADB or emulator error, check for a log in `encountered_errors/` describing a similar issue and apply the fix before troubleshooting from scratch.
+
+- **Best Practices:**
+  - Keep error logs concise but detailed enough to be actionable.
+  - Use clear filenames that reflect the error type or context (e.g., `android_build_error_log.txt`).
+  - Regularly review and clean up outdated or irrelevant error logs.
+
+- **Purpose**
+  - Document all encountered errors, their causes, and resolutions.
+  - Ensure error logs and documentation are reviewed and actionable.
+  - Provide a reference for recurring or critical errors to improve project stability.
+
+- **Usage**
+  - Add entries for each new error encountered during development or production.
+  - Link to relevant code, logs, or documentation.
+  - Update with resolution steps and prevention strategies.
+

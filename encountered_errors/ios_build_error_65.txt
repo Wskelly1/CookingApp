@@ -1,0 +1,44 @@
+Date: 2024-06-09
+
+Error Message:
+"Failed to build ios project. 'xcodebuild' exited with error code '65'."
+
+Context:
+- Occurred after running `npx react-native run-ios` on a React Native project.
+- Project recently cleaned and pods reinstalled.
+- Error 65 is a generic Xcode build failure, often requiring diagnosis in Xcode.
+
+Diagnosis Steps:
+1. Opened the project in Xcode using `open ios/CookingApp.xcworkspace`.
+2. Attempted to build in Xcode to view detailed error logs.
+3. Review the Issue Navigator in Xcode for specific error details.
+
+Next Steps for Resolution:
+- Check for missing or incompatible pods: Run `pod install` in the `ios` directory.
+- Clean the build folder in Xcode: Product > Clean Build Folder (⇧⌘K).
+- Check signing & capabilities: Ensure team and signing certificate are set correctly in project settings.
+- Check for incompatible Swift/Obj-C versions or module import errors.
+- Check for missing Info.plist keys or duplicate symbols.
+
+Notes:
+- Once the specific error is identified in Xcode, document the solution here for future reference.
+
+---
+
+Update (2024-06-09):
+
+Specific Xcode Error:
+- ReactCodegen: Command PhaseScriptExecution failed with a nonzero exit code.
+
+Solution Steps Taken:
+1. Cleaned all build artifacts, node_modules, and pods using `react-native-clean-project`.
+2. Reinstalled all JS dependencies with `npm install`.
+3. Reinstalled CocoaPods with `pod install` in the `ios` directory.
+
+This is a common React Native issue, often caused by stale or corrupted build artifacts or codegen outputs. Cleaning and reinstalling dependencies usually resolves it. If the error persists, check for:
+- Sufficient disk space
+- Correct Node.js version (use LTS recommended by React Native)
+- No custom modifications to codegen scripts
+- Xcode and CocoaPods are up to date
+
+If the problem continues, open the full build log in Xcode for more details and check for any additional script errors or permission issues. 

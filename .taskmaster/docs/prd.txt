@@ -1,0 +1,161 @@
+<context>
+# Overview
+The Cooking App is an interactive, gamified mobile application designed to teach people how to cook based on the ingredients and kitchen tools they have available. The app is especially targeted at college-aged individuals or beginners living on their own for the first time, who may not know what to cook or how to start. By leveraging an AI-powered assistant, the app helps users discover recipes tailored to their current pantry and equipment, and guides them step-by-step through the cooking process. The app aims to make cooking fun and accessible, encouraging users to "level up" as they gain experience, unlocking more advanced recipes and features over time.
+
+# Core Features
+- **User Accounts & Onboarding**:
+  - New users are prompted to create an account using email and password, and to generate a unique username.
+  - During onboarding, users specify their cooking experience (beginner, intermediate, advanced), dietary restrictions (gluten-free, vegan, vegetarian, etc.), food preferences, their purpose for downloading the app, and where they heard about it.
+  - All onboarding information is editable later in the user profile.
+  - User preferences and experience are stored and used to personalize recipe recommendations and app experience.
+
+- **LLM Personal Assistant ("Hey Chef")**:
+  - The AI assistant is activated by the phrase "Hey Chef" and features a pop-up chef avatar that can listen to voice commands.
+  - Users can tell the assistant what ingredients and tools they have, and the LLM will source recipes from the internet that match these constraints.
+  - The assistant displays a list of suitable recipes, each with required ingredients, tools, estimated time, and difficulty level.
+  - The LLM can answer follow-up questions (e.g., "What's the next step?", "What should I do first?") and provide audio instructions.
+  - Recipes are categorized by difficulty (easy, medium, hard), and user experience level determines which recipes are accessible.
+
+- **Recipe Sourcing & Display**:
+  - Recipes are sourced from reputable online APIs or databases.
+  - Each recipe includes a list of ingredients, required tools, step-by-step instructions, estimated time, and difficulty.
+  - Users can save recipes to their personal "Cookbook" for future reference.
+  - Recipes can be viewed offline if previously saved.
+
+- **Cookbook**:
+  - Users have a dedicated section to store and organize their favorite or frequently used recipes.
+  - Recipes in the Cookbook are accessible offline.
+
+- **Audio Instructions & Voice Interaction**:
+  - Users can interact with the app using voice commands, both for activating the assistant and for step-by-step cooking guidance.
+  - The app provides audio responses to user queries, making it easy to follow instructions without touching the device.
+
+- **Gamification**:
+  - As users cook more and complete recipes, they "level up" and unlock access to more advanced recipes and features.
+  - Recipes can have upgrade paths (e.g., easy, medium, hard versions), and users unlock higher levels as they gain experience.
+  - User profiles display their current level (beginner, intermediate, master) and a progress bar.
+
+- **Offline Access**:
+  - Users can view their profile and saved Cookbook recipes without an internet connection.
+  - LLM features and recipe sourcing require an internet connection.
+
+# User Experience
+- **Target Audience**:
+  - College-aged individuals, beginners in cooking, primarily in North America or other first-world countries.
+  - Users with dietary restrictions or preferences (gluten-free, vegan, vegetarian, etc.).
+
+- **User Journey**:
+  - New users are guided through onboarding, where they set up their account and specify preferences.
+  - The main navigation is a bottom bar with Home, Search, My Cookbook, and Profile.
+  - The Home screen features a welcome message, quick access to the "Hey Chef" assistant, and suggested recipes.
+  - The Search screen allows users to manually browse or filter recipes by ingredient, tool, or dietary need.
+  - The Cookbook screen displays saved recipes, organized by category or frequency of use.
+  - The Profile screen allows users to view and edit their information, preferences, and see their cooking level and progress.
+
+- **UI/UX Design**:
+  - Modern, sleek, and easy to navigate.
+  - Uses shadcn components for consistency and professional appearance.
+  - Supports both light and dark mode, with a toggle in the settings or profile.
+  - Large, clear buttons and intuitive navigation for ease of use.
+  - All UI elements (colors, components, design elements) are defined globally to ensure a consistent look and feel across the app.
+  - No social features at launch; focus is on personal learning and progress.
+
+- **Accessibility**:
+  - English only at launch.
+  - No special accessibility features initially, but design is clean and readable.
+
+- **Onboarding & Tutorials**:
+  - New users are guided through account setup, including linking email, setting username, and specifying dietary preferences.
+  - Onboarding information is used by the LLM to tailor recipe recommendations.
+  - Optional tutorial screens introduce users to the "Hey Chef" assistant and main app features.
+
+# Technical Architecture
+- **Frontend**:
+  - React Native for cross-platform development (iOS and Android).
+  - shadcn components for UI consistency and modern design.
+  - Bottom navigation bar for main app sections.
+  - Local storage for offline access to profile and Cookbook.
+  - **Global UI Design System**: All colors, components, and design elements are defined in a global theme or design system to ensure visual consistency throughout the app. This includes a shared color palette, typography, spacing, and reusable component library.
+
+- **Backend**:
+  - Supabase for user authentication and database storage.
+  - Stores user profiles, preferences, saved recipes, and progress.
+
+- **LLM Integration**:
+  - OpenAI API (or similar) for the "Hey Chef" assistant.
+  - Handles recipe sourcing, Q&A, and audio instructions.
+
+- **Audio**:
+  - Integration for voice commands and audio responses.
+  - Uses device microphone and speaker APIs.
+
+- **Offline Support**:
+  - Local storage for user profile and saved recipes.
+  - Syncs with backend when internet is available.
+
+- **Navigation**:
+  - Bottom navigation bar with Home, Search, Cookbook, Profile.
+
+# Development Roadmap
+- **MVP Requirements**:
+  - User account creation and onboarding (email/password, username, preferences)
+  - Profile management (edit experience, preferences, dietary needs)
+  - LLM assistant for recipe sourcing ("Hey Chef" voice activation, pop-up avatar, recipe search by ingredients/tools)
+  - Recipe display (ingredients, tools, steps, time, difficulty)
+  - Cookbook (save, organize, and view recipes offline)
+  - Audio instructions and voice Q&A
+  - Offline access for profile and Cookbook
+  - Modern UI/UX with light/dark mode and shadcn components
+
+- **Future Enhancements**:
+  - Gamification: Leveling up, recipe difficulty tiers (easy/medium/hard), progress bar, unlockable content
+  - Grocery list: Add recipe ingredients to a shopping list, AI-powered online ordering with local stores
+  - User-generated recipes: Allow users to create, edit, and share their own recipes
+  - Push notifications for reminders, updates, and new features
+  - Analytics and crash reporting for app improvement
+  - Additional accessibility features and multi-language support
+  - Social features: Comments, likes, sharing, following (future phase)
+
+# Logical Dependency Chain
+- **Foundation**: Set up project, Supabase backend, and authentication
+- **UI/UX**: Build navigation, onboarding, and profile screens
+- **Core**: Integrate LLM assistant and recipe sourcing, implement voice activation and pop-up avatar
+- **Cookbook**: Implement recipe saving, organization, and offline access
+- **Audio**: Add audio instructions, voice Q&A, and device integration
+- **Polish**: Add light/dark mode, shadcn components, and refine UI
+- **Future**: Gamification, grocery list, user-generated content, notifications, analytics, accessibility, social features
+
+# Risks and Mitigations
+- **LLM Integration Complexity**: Start with basic API calls and expand as needed. Use clear error handling for failed requests. Consider fallback responses if the LLM is unavailable.
+- **Recipe Sourcing Quality**: Use reputable APIs and allow user feedback for recipe quality. Regularly review and update sources.
+- **User Engagement**: Gamification and a fun assistant should increase retention. Monitor user activity and iterate based on feedback.
+- **Resource Constraints**: Focus on MVP first, then iterate. Use open-source tools and APIs where possible. Prioritize features based on user feedback and engagement.
+- **Voice and Audio Reliability**: Test across devices to ensure consistent performance. Provide text alternatives for audio instructions.
+- **Offline Functionality**: Ensure robust local storage and sync mechanisms to prevent data loss.
+
+# Appendix
+- **Testing**:
+  - Prioritize phone devices (iOS and Android).
+  - UI testing for all screens and flows.
+  - Edge case testing for onboarding, recipe sourcing, and offline access.
+  - Automated UI testing with Appium or similar tools if feasible.
+  - Manual testing for voice and audio features.
+
+- **Deployment**:
+  - Publish to App Store and Google Play.
+  - Plan for monthly updates and ongoing maintenance.
+  - Monitor app performance and user feedback for continuous improvement.
+
+- **Project Management**:
+  - Solo development.
+  - Progress tracked with Task Master for task breakdown and GitHub for version control.
+  - No strict workflow (Agile, Kanban, etc.), but regular reviews and updates.
+
+- **User Feedback & Analytics**:
+  - Collect user feedback through in-app prompts or surveys (future phase).
+  - Use analytics to monitor feature usage and identify areas for improvement.
+
+- **Monetization**:
+  - No monetization at launch. App is free to use.
+  - Consider freemium features, in-app purchases, or partnerships in future phases.
+</context> 

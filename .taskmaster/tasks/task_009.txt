@@ -1,0 +1,11 @@
+# Task ID: 9
+# Title: Voice Activation System
+# Status: pending
+# Dependencies: 8
+# Priority: medium
+# Description: Implement 'Hey Chef' voice activation and speech recognition for the assistant
+# Details:
+Research and integrate speech recognition library for React Native. Implement background listening for 'Hey Chef' wake phrase. Create voice command parser for ingredient and tool input. Implement audio feedback for successful activation. Create UI indicator for active listening state. Implement permission handling for microphone access. Add error handling for speech recognition failures.
+
+# Test Strategy:
+Test wake phrase detection with various accents and background noise levels. Verify ingredient and tool recognition accuracy. Test microphone permission flow. Ensure proper error handling for recognition failures.

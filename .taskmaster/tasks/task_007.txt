@@ -1,0 +1,11 @@
+# Task ID: 7
+# Title: User Profile Management
+# Status: pending
+# Dependencies: 5, 6
+# Priority: medium
+# Description: Implement user profile screen with ability to view and edit personal information and preferences
+# Details:
+Create profile screen with user information display. Implement edit functionality for all profile fields. Create UI for updating cooking experience, dietary restrictions, and food preferences. Implement profile picture upload and management. Add settings section for app preferences (notifications, theme). Connect profile updates to Supabase database. Implement local storage for offline profile access.
+
+# Test Strategy:
+Test viewing and editing all profile fields. Verify changes are persisted to the database. Test profile picture upload and display. Ensure profile data is available offline.

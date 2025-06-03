@@ -24,6 +24,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import SampleComponent from './src/components/SampleComponent';
+
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
@@ -78,10 +80,9 @@ function App(): React.JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <ScrollView
-        style={backgroundStyle}>
+      <ScrollView style={backgroundStyle}>
         <View style={{paddingRight: safePadding}}>
-          <Header/>
+          <Header />
         </View>
         <View
           style={{
@@ -104,6 +105,7 @@ function App(): React.JSX.Element {
           </Section>
           <LearnMoreLinks />
         </View>
+        <SampleComponent />
       </ScrollView>
     </View>
   );

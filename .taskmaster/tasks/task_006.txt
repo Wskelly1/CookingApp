@@ -1,0 +1,11 @@
+# Task ID: 6
+# Title: User Onboarding Flow
+# Status: pending
+# Dependencies: 3, 5
+# Priority: high
+# Description: Create the onboarding experience for new users to collect preferences and experience level
+# Details:
+Design multi-step onboarding flow with progress indicator. Create screens for: cooking experience selection (beginner, intermediate, advanced), dietary restrictions selection (gluten-free, vegan, vegetarian, etc.), food preferences input, purpose for downloading, and referral source. Implement data collection and storage in Supabase. Create skip functionality for optional steps. Implement onboarding completion tracking.
+
+# Test Strategy:
+Test complete onboarding flow with various user inputs. Verify all user preferences are correctly saved to the database. Test skipping optional steps. Ensure onboarding can be completed successfully.

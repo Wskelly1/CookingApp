@@ -1,0 +1,29 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+- **Main Points**
+  - For all user prompts, Cursor must automatically execute any suggested actions, commands, or file operations without waiting for user confirmation.
+  - Cursor should never ask the user to "proceed manually" or "confirm" before taking action.
+  - If a suggestion involves code changes, file moves, dependency installation, or command execution, Cursor should perform these steps immediately and only notify the user of the result.
+  - This rule applies globally to all prompts and workflows.
+  - If an action cannot be performed automatically (e.g., due to permissions or errors), Cursor should clearly explain the issue and suggest a resolution, but still attempt automation first.
+
+- **Examples**
+  - If a file needs to be moved, Cursor moves it and reports success.
+  - If a dependency needs to be installed, Cursor installs it and reports success.
+  - If a configuration file needs to be edited, Cursor edits it and reports success.
+  - If a command needs to be run, Cursor runs it and reports the output.
+
+- **Anti-Patterns**
+  - ❌ "Would you like me to proceed?"
+  - ❌ "Do you want to run this command?"
+  - ❌ "Let me know if you want to continue."
+  - ❌ "Would you like to do this manually?"
+
+- **Pattern**
+  - ✅ "Moved file X to Y."
+  - ✅ "Installed dependency Z."
+  - ✅ "Updated configuration as required."
+  - ✅ "Ran the following command: ..."

@@ -1,0 +1,11 @@
+# Task ID: 20
+# Title: Recipe Difficulty Classification
+# Status: pending
+# Dependencies: 11
+# Priority: medium
+# Description: Implement recipe categorization by difficulty level (easy, medium, hard)
+# Details:
+Create algorithm for classifying recipe difficulty based on ingredients, steps, techniques, and time. Implement visual indicators for difficulty levels. Create filtering system based on difficulty. Connect difficulty level to user experience level for recommendations. Implement difficulty-based sorting in search results. Add explanation for difficulty classification when requested.
+
+# Test Strategy:
+Test difficulty classification with various recipe types. Verify difficulty filtering works correctly. Test recommendation system based on user experience and recipe difficulty. Ensure difficulty indicators are clearly visible in recipe displays.

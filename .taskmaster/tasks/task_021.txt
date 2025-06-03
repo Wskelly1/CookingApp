@@ -1,0 +1,11 @@
+# Task ID: 21
+# Title: User Experience Level Tracking
+# Status: pending
+# Dependencies: 7, 20
+# Priority: low
+# Description: Implement system to track and display user cooking experience level
+# Details:
+Create experience tracking system with points for completed recipes. Implement level progression (beginner, intermediate, advanced) based on points. Create UI for displaying current level and progress. Implement milestone celebrations for level-ups. Add experience history tracking. Connect experience level to recipe recommendations and difficulty access. Store experience data in Supabase with local caching.
+
+# Test Strategy:
+Test experience point accumulation with recipe completions. Verify level progression works correctly. Test UI display of experience level and progress. Ensure milestone celebrations trigger appropriately.

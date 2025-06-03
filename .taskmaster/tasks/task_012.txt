@@ -1,0 +1,11 @@
+# Task ID: 12
+# Title: Recipe Display UI
+# Status: pending
+# Dependencies: 3, 11
+# Priority: high
+# Description: Create the UI for displaying recipe details including ingredients, tools, steps, time, and difficulty
+# Details:
+Design recipe detail screen with sections for overview, ingredients, tools, and step-by-step instructions. Implement ingredient list with quantities and optional substitutions. Create tool list with visual indicators. Implement step-by-step instruction display with progress tracking. Add estimated time and difficulty level indicators. Create UI for saving recipe to Cookbook. Implement share functionality for recipes.
+
+# Test Strategy:
+Test recipe display with various recipe types and complexities. Verify all recipe information is correctly displayed. Test progress tracking through recipe steps. Ensure save and share functionality works as expected.
