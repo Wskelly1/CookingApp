@@ -1,6 +1,6 @@
 # Task ID: 2
 # Title: Supabase Backend Integration
-# Status: pending
+# Status: in-progress
 # Dependencies: 1
 # Priority: high
 # Description: Set up Supabase project and configure authentication and database services

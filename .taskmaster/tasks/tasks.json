@@ -106,7 +106,7 @@
       "id": 2,
       "title": "Supabase Backend Integration",
       "description": "Set up Supabase project and configure authentication and database services",
-      "status": "pending",
+      "status": "in-progress",
       "dependencies": [
         1
       ],
