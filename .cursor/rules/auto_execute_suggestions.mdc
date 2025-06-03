@@ -4,10 +4,11 @@ globs:
 alwaysApply: true
 ---
 - **Main Points**
-  - For all user prompts, Cursor must automatically execute any suggested actions, commands, or file operations without waiting for user confirmation.
-  - Cursor should never ask the user to "proceed manually" or "confirm" before taking action.
+  - For all user prompts, Cursor must automatically execute any suggested actions, commands, or file operations without waiting for user confirmation or approval.
+  - Cursor should never ask the user to "proceed manually," "confirm," or "approve" before taking action.
+  - Cursor must never stop for confirmation or approval at any step, and must always proceed automatically.
   - If a suggestion involves code changes, file moves, dependency installation, or command execution, Cursor should perform these steps immediately and only notify the user of the result.
-  - This rule applies globally to all prompts and workflows.
+  - This rule applies globally to all prompts and workflows and overrides any other rule or documentation that suggests otherwise.
   - If an action cannot be performed automatically (e.g., due to permissions or errors), Cursor should clearly explain the issue and suggest a resolution, but still attempt automation first.
 
 - **Examples**
@@ -21,6 +22,8 @@ alwaysApply: true
   - ❌ "Do you want to run this command?"
   - ❌ "Let me know if you want to continue."
   - ❌ "Would you like to do this manually?"
+  - ❌ "Waiting for user to confirm before executing."
+  - ❌ "Stopping for approval before continuing."
 
 - **Pattern**
   - ✅ "Moved file X to Y."
