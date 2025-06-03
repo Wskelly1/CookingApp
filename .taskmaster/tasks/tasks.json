@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Project Setup and Configuration",
       "description": "Initialize Flutter project with necessary configurations for iOS and Android platforms",
-      "status": "in-progress",
+      "status": "done",
       "dependencies": [],
       "priority": "high",
       "details": "Create a new Flutter project using the latest Flutter SDK with Dart support. Configure project structure following best practices with directories for components, screens, assets, navigation, and utils. Set up Dart analysis options and code formatting for code quality. Initialize Git repository and create initial commit. Configure environment variables for development, staging, and production environments. Set up Material Components or Flutter widgets for consistent UI components. Install and configure navigation and shared preferences dependencies.",
@@ -50,55 +50,55 @@
           "id": "1.11",
           "title": "Create new Flutter project",
           "description": "Create a new Flutter project using 'flutter create' command to replace the React Native project",
-          "status": "to-do"
+          "status": "done"
         },
         {
           "id": "1.12",
           "title": "Migrate project structure to Flutter conventions",
           "description": "Adapt the existing structure to Flutter conventions with lib/widgets, lib/screens, lib/models, etc.",
-          "status": "to-do"
+          "status": "done"
         },
         {
           "id": "1.13",
           "title": "Configure Dart analysis options",
           "description": "Set up analysis_options.yaml for Dart linting and code style",
-          "status": "to-do"
+          "status": "done"
         },
         {
           "id": "1.14",
           "title": "Set up Flutter environment configuration",
           "description": "Configure environment variables using Flutter-appropriate methods like .env files with flutter_dotenv",
-          "status": "to-do"
+          "status": "done"
         },
         {
           "id": "1.15",
           "title": "Set up Material Components or Flutter widget library",
           "description": "Configure Material Design components or another widget library to replace shadcn",
-          "status": "to-do"
+          "status": "done"
         },
         {
           "id": "1.16",
           "title": "Install Flutter navigation and shared preferences",
           "description": "Add dependencies for navigation (e.g., go_router) and shared preferences for local storage",
-          "status": "to-do"
+          "status": "done"
         },
         {
           "id": "1.8",
           "title": "Test Android build",
           "description": "Verify project builds successfully on Android simulator/emulator",
-          "status": "to-do"
+          "status": "done"
         },
         {
           "id": "1.9",
           "title": "Document iOS build requirements",
           "description": "Document that Xcode installation and proper configuration is required for iOS builds",
-          "status": "to-do"
+          "status": "done"
         },
         {
           "id": "1.17",
           "title": "Validate Dart with sample widget",
           "description": "Create a sample widget to validate Dart configuration is working correctly",
-          "status": "to-do"
+          "status": "done"
         }
       ]
     },

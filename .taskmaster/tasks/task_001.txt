@@ -1,6 +1,6 @@
 # Task ID: 1
 # Title: Project Setup and Configuration
-# Status: in-progress
+# Status: done
 # Dependencies: None
 # Priority: high
 # Description: Initialize Flutter project with necessary configurations for iOS and Android platforms
@@ -53,55 +53,55 @@ Verify project builds successfully on Android simulator. Note that iOS build req
 ### Details:
 
 
-## 1.11. Create new Flutter project [to-do]
+## 1.11. Create new Flutter project [done]
 ### Dependencies: None
 ### Description: Create a new Flutter project using 'flutter create' command to replace the React Native project
 ### Details:
 
 
-## 1.12. Migrate project structure to Flutter conventions [to-do]
+## 1.12. Migrate project structure to Flutter conventions [done]
 ### Dependencies: None
 ### Description: Adapt the existing structure to Flutter conventions with lib/widgets, lib/screens, lib/models, etc.
 ### Details:
 
 
-## 1.13. Configure Dart analysis options [to-do]
+## 1.13. Configure Dart analysis options [done]
 ### Dependencies: None
 ### Description: Set up analysis_options.yaml for Dart linting and code style
 ### Details:
 
 
-## 1.14. Set up Flutter environment configuration [to-do]
+## 1.14. Set up Flutter environment configuration [done]
 ### Dependencies: None
 ### Description: Configure environment variables using Flutter-appropriate methods like .env files with flutter_dotenv
 ### Details:
 
 
-## 1.15. Set up Material Components or Flutter widget library [to-do]
+## 1.15. Set up Material Components or Flutter widget library [done]
 ### Dependencies: None
 ### Description: Configure Material Design components or another widget library to replace shadcn
 ### Details:
 
 
-## 1.16. Install Flutter navigation and shared preferences [to-do]
+## 1.16. Install Flutter navigation and shared preferences [done]
 ### Dependencies: None
 ### Description: Add dependencies for navigation (e.g., go_router) and shared preferences for local storage
 ### Details:
 
 
-## 1.8. Test Android build [to-do]
+## 1.8. Test Android build [done]
 ### Dependencies: None
 ### Description: Verify project builds successfully on Android simulator/emulator
 ### Details:
 
 
-## 1.9. Document iOS build requirements [to-do]
+## 1.9. Document iOS build requirements [done]
 ### Dependencies: None
 ### Description: Document that Xcode installation and proper configuration is required for iOS builds
 ### Details:
 
 
-## 1.17. Validate Dart with sample widget [to-do]
+## 1.17. Validate Dart with sample widget [done]
 ### Dependencies: None
 ### Description: Create a sample widget to validate Dart configuration is working correctly
 ### Details:
